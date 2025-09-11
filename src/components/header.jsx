@@ -36,8 +36,7 @@ export default function Header({ t, setLang, lang }) {
                 </TextContainer>
             </HeaderInner>
             <Description>
-                I specialize in creating innovative digital experiences that engage users and drive results. 
-                In other words, I push pixels and make the internet a nice place to be.
+                {t("introP2")}
             </Description>
         </header>
     );
@@ -97,6 +96,10 @@ const HeaderInner = styled.div`
     display: flex;
     gap: 40px;
     align-items: center;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;        
+    }
 `;
 const ImageContainer = styled.div`
     min-width: 150px;
