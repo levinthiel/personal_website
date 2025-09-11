@@ -1,12 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --white: #FBFFFF;
-  --black: #0D0D0D;
+  --white:    #FBFFFF;
+  --black:    #0D0D0D;
+  --darkgrey: #3f3f3f;
+  --blue:     #008CFF;
 }
 
 body {
-  background: var(--white);
+  background: linear-gradient(180deg, rgb(246, 246, 246)  0%, rgb(232, 232, 232) 100%) fixed;
+  background-image: url(../../public/concrete_wall.png) ;
   color: var(--black);
   font-family: montserrat;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 400;
+}
+p, button {
+  font-family: Inter;
+  color: var(--darkgrey);
 }
