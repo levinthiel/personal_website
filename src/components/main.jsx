@@ -8,7 +8,7 @@ export default function Main({ t, setLang, lang }) {
   return (
     <StyledMain>
       <Header t={t} setLang={setLang} lang={lang}/>
-      <Skills/>
+      <Skills t={t} setLang={setLang} lang={lang}/>
     </StyledMain>
   );
 }
