@@ -4,10 +4,10 @@ import Header from "@/components/header";
 import Skills from "@/components/skills";
 
 // Footer.jsx
-export default function Main() {
+export default function Main({ t, setLang, lang }) {
   return (
     <StyledMain>
-      <Header/>
+      <Header t={t} setLang={setLang} lang={lang}/>
       <Skills/>
     </StyledMain>
   );

@@ -3,17 +3,17 @@ import { IoPlanet } from "react-icons/io5";
 import Image from 'next/image'
 
 // Footer.jsx
-export default function Header() {
+export default function Header({ t, setLang, lang }) {
     return (
         <header>
             <TopHeader>
                 <WelcomeContainer>
-                    <Welcome> <IoPlanet /> Welcome</Welcome>
+                    <Welcome> <IoPlanet /> {t("welcome")}</Welcome>
                 </WelcomeContainer>
                 <LanguagesContainer>
-                    <button type="button">EN</button>
-                    <button type="button">FR</button>
-                    <button type="button">DE</button>
+                    <button type="button" onClick={() => setLang("en")} className={lang === "en" ? "active" : ""}>EN</button>
+                    <button type="button" onClick={() => setLang("fr")} className={lang === "fr" ? "active" : ""}>FR</button>
+                    <button type="button" onClick={() => setLang("de")} className={lang === "de" ? "active" : ""}>DE</button>
                 </LanguagesContainer>
             </TopHeader>
             <HeaderInner>
@@ -28,10 +28,10 @@ export default function Header() {
                 </ImageContainer>
                 <TextContainer>
                     <h1>
-                        Hi, I'm Levin
+                        {t("introH1")}
                     </h1>
                     <p>
-                        a Full stack Designer (UX/UI designer and a Frontend developer) with over 10 years experience.
+                        {t("introP")}
                     </p>
                 </TextContainer>
             </HeaderInner>
@@ -77,10 +77,13 @@ const Welcome = styled.p`
 const LanguagesContainer = styled.div`
     display: flex;
     gap: 12px;
-    padding-right: 12px;
+    padding: 3px 12px;
 
         button {
             transition: all ease .3s;
+            padding: 0px 5px;
+            font-size: 13px; 
+
             &:hover{
                 color: var(--blue);
             }
@@ -103,6 +106,7 @@ const ImageContainer = styled.div`
 
     img {
         border-radius: 50%;
+        border: solid 3px var(--blue);
     }
 `;
 const TextContainer = styled.div`
