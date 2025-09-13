@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import Header from "@/components/header";
 import Skills from "@/components/skills";
+import Languages from "@/components/languages";
 
 // Footer.jsx
 export default function Main({ t, setLang, lang }) {
@@ -9,6 +10,7 @@ export default function Main({ t, setLang, lang }) {
     <StyledMain>
       <Header t={t} setLang={setLang} lang={lang}/>
       <Skills t={t} setLang={setLang} lang={lang}/>
+      <Languages t={t} setLang={setLang} lang={lang}/>
     </StyledMain>
   );
 }
