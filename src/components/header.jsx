@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { IoPlanet } from "react-icons/io5";
 import Image from 'next/image'
 
-// Footer.jsx
 export default function Header({ t, setLang, lang }) {
     return (
         <header>
@@ -41,6 +40,7 @@ export default function Header({ t, setLang, lang }) {
         </header>
     );
 }
+
 const TopHeader = styled.div`
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,6 @@ const Welcome = styled.p`
     width: fit-content;
     padding: 8px 24px 0px 20px;
     font-family: Inter;
-    ;
 
         &:hover {
             svg{
