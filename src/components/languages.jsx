@@ -74,4 +74,14 @@ const FlagContainer = styled.div `
 const Language = styled.div `
     display: flex;
     gap: 8px;
+
+    img {
+        transition: all ease .3s;
+    }
+
+    &:hover {
+        img {
+            transform: rotate(360deg);
+        }
+    }
 `;
