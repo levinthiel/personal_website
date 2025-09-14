@@ -11,7 +11,7 @@ export default function Hobbies({ t, setLang, lang }) {
     )
 }
 const HobbiesSection = styled.div `
-margin-top: 12px;
+    margin-top: 12px;
     padding: 20px 40px;
     display: flex;
     flex-wrap: wrap;

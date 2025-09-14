@@ -4,15 +4,17 @@ import Header from "@/components/header";
 import Skills from "@/components/skills";
 import Languages from "@/components/languages";
 import Hobbies from "@/components/hobbies";
+import Projects from "@/components/projects"
 
 // Footer.jsx
 export default function Main({ t, setLang, lang }) {
   return (
     <StyledMain>
-      <Header t={t} setLang={setLang} lang={lang}/>
-      <Skills t={t} setLang={setLang} lang={lang}/>
-      <Languages t={t} setLang={setLang} lang={lang}/>
-      <Hobbies t={t} setLang={setLang} lang={lang}/>
+      <Header     t={t} setLang={setLang} lang={lang}/>
+      <Skills     t={t} setLang={setLang} lang={lang}/>
+      <Languages  t={t} setLang={setLang} lang={lang}/>
+      <Projects  t={t} setLang={setLang} lang={lang}/>
+      <Hobbies    t={t} setLang={setLang} lang={lang}/>
     </StyledMain>
   );
 }
