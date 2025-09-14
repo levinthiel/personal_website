@@ -8,6 +8,9 @@ export default function Projects({ t, setLang, lang }) {
             <TextContainer>
                 <h2>{t("projectsH2")}</h2>
                 <p>{t("projectsText")}</p>
+
+                <p>Other projects:</p> 
+                <button type="button">Rooted</button>
             </TextContainer>
             <ProjectCard>
                 <ImageContainer>
