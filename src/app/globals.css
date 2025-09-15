@@ -6,7 +6,7 @@
   --darkgrey: #3f3f3f;
   --blue:     #008CFF;
   --darkblue: #0362af;
-  --lightblue:#ecf6ff;
+  --lightblue:#f2f9ff;
 }
 
 body {
@@ -33,9 +33,12 @@ h3 {
   color: var(--blue);
   line-height: 1;
 }
-p, button {
+p, button, small, li {
   font-family: Inter;
   color: var(--darkgrey);
+}
+small {
+  font-size: 70%;
 }
 header button.active {
   background: var(--white);

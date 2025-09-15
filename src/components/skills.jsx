@@ -99,12 +99,10 @@ export default function Skills({ t, setLang, lang }) {
     );
 }
 
-/* Styled components */
-
 const SkillsContainer = styled.div`
     width: 100%;
     background: var(--white);
-    padding: 0; /* header handles padding */
+    padding: 0;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -112,7 +110,6 @@ const SkillsContainer = styled.div`
     overflow: visible;
 `;
 
-/* Header bar that always shows (title + chevron) */
 const HeaderBar = styled.div`
     padding: 20px 40px;
     display: flex;
@@ -146,14 +143,12 @@ const ToggleButton = styled.button`
     background: rgba(0, 0, 0, 0.04);
     }
 
-  /* rotate the chevron when open (downwards) */
     svg {
         transform: rotate(${(p) => (p.$open ? "180deg" : "0deg")});
         transition: transform 200ms ease;
     }
 `;
 
-/* Animated content wrapper — we animate max-height for simple smooth collapse */
 const ContentWrapper = styled.div`
     box-sizing: border-box;
     overflow: hidden;
