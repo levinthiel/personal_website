@@ -6,12 +6,14 @@ import Languages from "@/components/languages";
 import Hobbies from "@/components/hobbies";
 import Projects from "@/components/projects"
 import Links from "@/components/links"
+import Jobs from "@/components/jobs"
 
 // Footer.jsx
 export default function Main({ t, setLang, lang }) {
   return (
     <StyledMain>
       <Header     t={t} setLang={setLang} lang={lang}/>
+      <Jobs       t={t} setLang={setLang} lang={lang}/>
       <Links      t={t} setLang={setLang} lang={lang}/>
       <Skills     t={t} setLang={setLang} lang={lang}/>
       <Languages  t={t} setLang={setLang} lang={lang}/>
