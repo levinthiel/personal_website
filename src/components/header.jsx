@@ -9,6 +9,7 @@ export default function Header({ t, setLang, lang }) {
                 <WelcomeContainer>
                     <Welcome> <IoPlanet /> {t("welcome")}</Welcome>
                 </WelcomeContainer>
+                <AvailabilityBubble className="active">{t("availability")}</AvailabilityBubble>
                 <LanguagesContainer>
                     <button type="button" onClick={() => setLang("en")} className={lang === "en" ? "active" : ""}>EN</button>
                     <button type="button" onClick={() => setLang("fr")} className={lang === "fr" ? "active" : ""}>FR</button>
@@ -71,6 +72,54 @@ const Welcome = styled.p`
             fill: var(--blue);
             transition: all ease .3s
         }
+`;
+const AvailabilityBubble = styled.div`
+    background: var(--white);
+    border-radius: 14px;
+    padding: 4px 15px 4px 32px;
+    height: 27px;
+    font-size: small;
+    position: relative;
+    align-items: center;
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+        background: var(--green);
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+        background: var(--green);
+        border-radius: 50%;
+        animation: pulse 1.5s infinite;
+        z-index: 1;
+    }
+
+    @keyframes pulse {
+        0% {
+        transform: scale(1);
+        opacity: 0.8;
+        }
+        100% {
+        transform: scale(2.5);
+        opacity: 0;
+        }
+    }
 `;
 const LanguagesContainer = styled.div`
     display: flex;

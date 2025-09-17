@@ -3,6 +3,7 @@ import Languages from "@/components/languages";
 export const texts = {
     en: {
         welcome: "Welcome",
+        availability: "Open to work",
         introH1: "Hi, I'm Levin",
         introP: "a Full stack Designer(UX/UI designer and a Frontend developer) with over 10 years experience.",
         
@@ -26,7 +27,10 @@ export const texts = {
         skillsgroup4:"Creative skills",
         skillsgroup4item1:"sketching",
         skillsgroup4item2:"painting",
-        skillsgroup4item3:"digital dainting",
+        skillsgroup4item3:"digital painting",
+
+        quote1:"Code without love is just text.",
+        quote2:"There are no problems, only solutions.",
 
         languages: "Languages",
 
@@ -37,7 +41,8 @@ export const texts = {
         projectsText:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     },
     fr: {
-        welcome: "Bienvenu",
+        welcome: "Bienvenue",
+        availability: "Disponible",
         introH1: "Salut, je m'appelle Levin",
         introP: "je suis designer Full Stack (designer UX/UI et développeur Frontend) avec plus de 10 ans d'expérience.",
         introP2: " Je suis spécialisé dans la création d'expériences numériques innovantes qui engagent les utilisateurs et génèrent des résultats. En d'autres termes, je pousse des pixels et je fais de l'internet un endroit plus sympa.",
@@ -63,6 +68,9 @@ export const texts = {
         skillsgroup4item2:"DAO",
         skillsgroup4item3:"Peinture",
 
+        quote1:"Le code sans amour, ce n'est que du texte.",
+        quote2:"Il n'y a pas de problemes, que des solutions.",
+
         languages: "Langues",
 
         hobbies:"Loisirs",
@@ -73,6 +81,7 @@ export const texts = {
     },
     de: {
         welcome:"Willkommen",
+        availability: "Verfügbar",
         introH1: "Hi, ich bin Levin",
         introP: "ein Full-Stack-Designer (UX/UI-Designer und Frontend-Entwickler) mit über 10 Jahren Erfahrung.",
         introP2: " Ich bin darauf spezialisiert, innovative digitale Erlebnisse zu schaffen, die Nutzer begeistern und Ergebnisse erzielen. Mit anderen Worten: Ich schiebe Pixels und mache das Internet zu einem schöneren Ort.",
@@ -97,6 +106,9 @@ export const texts = {
         skillsgroup4item1:"Zeichnen",
         skillsgroup4item2:"Digitales Zeichnen",
         skillsgroup4item3:"Malen",
+
+        quote1:"Code ohne Liebe ist nur Text.",
+        quote2:"Es gibt keine Probleme, nur Lösungen.",
 
         languages: "Sprachen",
 
