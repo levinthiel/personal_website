@@ -27,7 +27,10 @@ export const texts = {
         skillsgroup4:"Creative skills",
         skillsgroup4item1:"sketching",
         skillsgroup4item2:"painting",
-        skillsgroup4item3:"digital dainting",
+        skillsgroup4item3:"digital painting",
+
+        quote1:"Code without love is just text.",
+        quote2:"There are no problems, only solutions.",
 
         languages: "Languages",
 
@@ -65,6 +68,9 @@ export const texts = {
         skillsgroup4item2:"DAO",
         skillsgroup4item3:"Peinture",
 
+        quote1:"Le code sans amour, ce n'est que du texte.",
+        quote2:"Il n'y a pas de problemes, que des solutions.",
+
         languages: "Langues",
 
         hobbies:"Loisirs",
@@ -100,6 +106,9 @@ export const texts = {
         skillsgroup4item1:"Zeichnen",
         skillsgroup4item2:"Digitales Zeichnen",
         skillsgroup4item3:"Malen",
+
+        quote1:"Code ohne Liebe ist nur Text.",
+        quote2:"Es gibt keine Probleme, nur Lösungen.",
 
         languages: "Sprachen",
 

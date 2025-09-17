@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import Header from "@/components/header";
 import Skills from "@/components/skills";
+import Quote from "@/components/quote";
 import Languages from "@/components/languages";
 import Hobbies from "@/components/hobbies";
 import Projects from "@/components/projects"
@@ -15,6 +16,7 @@ export default function Main({ t, setLang, lang }) {
     <StyledMain>
       <Header     t={t} setLang={setLang} lang={lang}/>
       <Skills     t={t} setLang={setLang} lang={lang}/>
+      <Quote      t={t} setLang={setLang} lang={lang}/>
       <Languages  t={t} setLang={setLang} lang={lang}/>
       <Jobs       t={t} setLang={setLang} lang={lang}/>
       <Projects   t={t} setLang={setLang} lang={lang}/>
