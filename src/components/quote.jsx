@@ -5,7 +5,7 @@ export default function Quote({ t, setLang, lang }) {
 
     const quotes = [
         t("quote1"),
-        t("quote2"),
+        t("quote2"), //quote3:If nobody complains, the design is probably right.
     ];
 
   const cycleDuration = 6; // seconds for a full cycle (one quote visible then next)
