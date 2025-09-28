@@ -3,35 +3,53 @@ import Image from 'next/image'
 
 export default function Projects({ t, setLang, lang }) {
     return (
-        <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank">
+        
         <ProjectsContainer>
             <TextContainer>
                 <h2>{t("projectsH2")}</h2>
                 <p>{t("projectsText")}</p>
-
-                <p>Other projects:</p> 
-                <button type="button">Rooted</button>
             </TextContainer>
-            <ProjectCard>
-                <ImageContainer>
-                    <Image
-                        src="/forcefield.png"
-                        width={190}
-                        height={190}
-                        alt="Forcefield Logo"
-                        title="Forcefield - Chronicles from the Edge - Science fiction short stories"
-                    />
-                </ImageContainer>
-                
-                    <Styledbutton type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                        </svg>
-                        Demo
-                    </Styledbutton>
-            </ProjectCard>
+            <ProjectCardWrapper>
+                <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank">
+                    <ProjectCard>
+                        <ImageContainer>
+                            <Image
+                                src="/forcefield.png"
+                                width={190}
+                                height={190}
+                                alt="Forcefield Logo"
+                                title="Forcefield - Chronicles from the Edge - Science fiction short stories"
+                            />
+                        </ImageContainer>
+                            <Styledbutton type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                Demo
+                            </Styledbutton>
+                    </ProjectCard>
+                </DemoLink>
+                <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank">
+                    <ProjectCard>
+                        {/* <ImageContainer>
+                            <Image
+                                src="/forcefield.png"
+                                width={190}
+                                height={190}
+                                alt="Forcefield Logo"
+                                title="Forcefield - Chronicles from the Edge - Science fiction short stories"
+                            />
+                        </ImageContainer> */}
+                            <Styledbutton type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+                                Demo
+                            </Styledbutton>
+                    </ProjectCard>
+                </DemoLink>
+            </ProjectCardWrapper>
         </ProjectsContainer>
-    </DemoLink>
 )}
 const DemoLink = styled.a``;
 const ProjectsContainer= styled.div `
@@ -50,11 +68,15 @@ const TextContainer = styled.div `
     flex-direction: column;
     gap: 16px;
 `;
+const ProjectCardWrapper = styled.div`
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+`;
 const ProjectCard = styled.div`
     background: var(--white);
     padding: 12px;
     border-radius: 12px;
-    min-height: 100%;
     min-width: 170px;
     display: flex;
     flex-direction: column;
