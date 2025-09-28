@@ -8,35 +8,79 @@ export default function Jobs({ t, setLang, lang }) {
             <Jobz>
                 <Job>
                     <JobTitleandInfos>
-                        <h3>UX/UI Designer & Web Developer</h3>
-                            <p>Network Publishing GmbH</p>
-                            <Location><FaLocationDot /> Cologne (Hybrid)  - 2025</Location>
+                        <h3>{t("job1_title")}</h3>
+                        <p>{t("job1_company")}</p>
+                        <Location><FaLocationDot />{t("job1_location")}</Location>
                     </JobTitleandInfos>
                     <JobDescription>
-                        <li>Creation of modern, user-friendly & accessible designs</li>
-                        <li>Integration and adaptation of designs in TYPO3 using TypoScript, HTML and SCSS (responsive design)</li>
+                        <li>{t("job1_description1")}</li>
+                        <li>{t("job1_description2")}</li>
                     </JobDescription>
                 </Job>
                 <Job>
                     <JobTitleandInfos>
-                        <h3>UX/UI Designer & Web Developer</h3>
-                            <p>Network Publishing GmbH</p>
-                            <Location><FaLocationDot /> Cologne (Hybrid)  - 2025</Location>
+                        <h3>{t("job2_title")}</h3>
+                        <p>{t("job2_company")}</p>
+                        <Location><FaLocationDot />{t("job2_location")}</Location>
                     </JobTitleandInfos>
                     <JobDescription>
-                        <li>Creation of modern, user-friendly & accessible designs</li>
-                        <li>Integration and adaptation of designs in TYPO3 using TypoScript, HTML and SCSS (responsive design)</li>
+                        <li>{t("job2_description1")}</li>
+                        <li>{t("job2_description2")}</li>
                     </JobDescription>
                 </Job>
                 <Job>
                     <JobTitleandInfos>
-                        <h3>UX/UI Designer & Web Developer</h3>
-                            <p>Network Publishing GmbH</p>
-                            <Location><FaLocationDot /> Cologne (Hybrid)  - 2025</Location>
+                        <h3>{t("job3_title")}</h3>
+                        <p>{t("job3_company")}</p>
+                        <Location><FaLocationDot />{t("job3_location")}</Location>
                     </JobTitleandInfos>
                     <JobDescription>
-                        <li>Creation of modern, user-friendly & accessible designs</li>
-                        <li>Integration and adaptation of designs in TYPO3 using TypoScript, HTML and SCSS (responsive design)</li>
+                        <li>{t("job3_description1")}</li>
+                        <li>{t("job3_description2")}</li>
+                        <li>{t("job3_description3")}</li>
+                    </JobDescription>
+                </Job>
+                <Job>
+                    <JobTitleandInfos>
+                        <h3>{t("job4_title")}</h3>
+                        <p>{t("job4_company")}</p>
+                        <Location><FaLocationDot />{t("job4_location")}</Location>
+                    </JobTitleandInfos>
+                    <JobDescription>
+                        <li>{t("job4_description1")}</li>
+                        <li>{t("job4_description2")}</li>
+                        <li>{t("job4_description3")}</li>
+                    </JobDescription>
+                </Job>
+                <Job>
+                    <JobTitleandInfos>
+                        <h3>{t("job5_title")}</h3>
+                        <p>{t("job5_company")}</p>
+                        <Location><FaLocationDot />{t("job5_location")}</Location>
+                    </JobTitleandInfos>
+                    <JobDescription>
+                        <li>{t("job5_description1")}</li>
+                    </JobDescription>
+                </Job>
+                <Job>
+                    <JobTitleandInfos>
+                        <h3>{t("job6_title")}</h3>
+                        <p>{t("job6_company")}</p>
+                        <Location><FaLocationDot />{t("job6_location")}</Location>
+                    </JobTitleandInfos>
+                    <JobDescription>
+                        <li>{t("job6_description1")}</li>
+                    </JobDescription>
+                </Job>
+                <Job>
+                    <JobTitleandInfos>
+                        <h3>{t("job7_title")}</h3>
+                        <p>{t("job7_company")}</p>
+                        <Location><FaLocationDot />{t("job7_location")}</Location>
+                    </JobTitleandInfos>
+                    <JobDescription>
+                        <li>{t("job7_description1")}</li>
+                        <li>{t("job7_description2")}</li>
                     </JobDescription>
                 </Job>
             </Jobz>

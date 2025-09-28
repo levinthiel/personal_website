@@ -32,6 +32,48 @@ export const texts = {
         quote1:"Code without love is just text.",
         quote2:"There are no problems, only solutions.",
 
+        job1_title:"UX/UI Designer & Web Developer",
+        job1_company:"Network Publishing GmbH",
+        job1_location:"Cologne (Hybrid)  - 2025",
+        job1_description1:"Creation of modern, user-friendly & accessible designs",
+        job1_description2:"Integration and adaptation of designs in TYPO3 using TypoScript, HTML and SCSS (responsive design)",
+
+        job2_title:"UX/UI Designer",
+        job2_company:"Sign:up GmbH - 2023 - 2024",
+        job2_location:"Duisburg - DE (Remote)",
+        job2_description1:"Creation of user-friendly, user-oriented designs",
+        job2_description2:"Close collaboration with developers",
+
+        job3_title:"UX/UI Designer",
+        job3_company:"Faktor E GmbH - 2021 - 2023",
+        job3_location:"Bonn - DE (Hybrid)",
+        job3_description1:"Creation of user-friendly, user-oriented designs",
+        job3_description2:"Close collaboration with developers",
+        job3_description3:"HTML & CSS adaptations (responsive design)",
+
+        job4_title:"Graphic & Web Designer / Team lead",
+        job4_company:"Hemd & Hoodie - 2017 - 2020",
+        job4_location:"Cologne - DE",
+        job4_description1:"Management of a team of designers",
+        job4_description2:"Development of designs (social media, advertising campaigns)",
+
+        job5_title:"Graphic & Web Designer",
+        job5_company:"Hemd & Hoodie - 2014 - 2017",
+        job5_location:"Cologne - DE",
+        job5_description1:"Development of designs (social media, advertising campaigns, magazines, etc.)",
+
+        job6_title:"Graphic & Web Designer",
+        job6_company:"Hellbrecht Optics - 2014",
+        job6_location:"Hilden - DE",
+        job6_description1:"Development of designs for e-commerce, advertising campaigns, etc.",
+
+        job7_title:"Graphic & Web Designer",
+        job7_company:"LoFi-Merchandise - 2012 - 2014 ",
+        job7_location:"Cologne - DE",
+        job7_description1:"Design creation for bands and festivals",
+        job7_description2:"Shopfront decoration (graffiti, painting, stickers, etc.)",
+
+
         languages: "Languages",
 
         hobbies:"Hobbies",
@@ -71,6 +113,47 @@ export const texts = {
         quote1:"Le code sans amour, ce n'est que du texte.",
         quote2:"Il n'y a pas de problemes, que des solutions.",
 
+        job1_title:"UX/UI Designer & Développeur Web",
+        job1_company:"Network Publishing GmbH",
+        job1_location:"Cologne - DE (Hybride)  - 2025",
+        job1_description1:"Création de webdesigns accessibles et orientés utilisateurs",
+        job1_description2:"Intégration et adaptation des designs sous TYPO3 avec TypoScript, HTML et SCSS (responsive design)",
+
+        job2_title:"UX/UI Designer",
+        job2_company:"Sign:up GmbH - 2023 - 2024",
+        job2_location:"Duisburg - DE (Télétravail)",
+        job2_description1:"Création de webdesigns accessibles et orientés utilisateurs",
+        job2_description2:"Collaboration étroite avec les développeurs",
+
+        job3_title:"UX/UI Designer",
+        job3_company:"Faktor E GmbH - 2021 - 2023",
+        job3_location:"Bonn - DE (Hybride)",
+        job3_description1:"Création de webdesigns accessibles et orientés utilisateurs",
+        job3_description2:"Collaboration étroite avec les développeurs",
+        job3_description3:"Adaptations HTML & CSS (responsive design)",
+
+        job4_title:"Graphiste & Web Designer / Responsable d'équipe",
+        job4_company:"Hemd & Hoodie - 2017 - 2020",
+        job4_location:"Cologne - DE",
+        job4_description1:"Direction d'équipe de designers",
+        job4_description2:"Création de designs (réseaux sociaux, campagnes publicitaires)",
+
+        job5_title:"Graphiste & Web Designer",
+        job5_company:"Hemd & Hoodie - 2014 - 2017",
+        job5_location:"Cologne - DE",
+        job5_description1:"Création de designs (médias sociaux, campagnes publicitaires, magazines, etc)",
+
+        job6_title:"Graphiste & Web Designer",
+        job6_company:"Hellbrecht Optics - 2014",
+        job6_location:"Hilden - DE",
+        job6_description1:"Création de designs pour l'E-commerce, campagnes publicitaires…",
+
+        job7_title:"Graphic & Web Designer",
+        job7_company:"LoFi-Merchandise - 2012 - 2014 ",
+        job7_location:"Cologne - DE",
+        job7_description1:"Création de designs pour groupes de musique et festivals",
+        job7_description2:"Décoration de la surface du magasin (graffiti, peinture, stickers, etc.)",
+
         languages: "Langues",
 
         hobbies:"Loisirs",
@@ -109,6 +192,47 @@ export const texts = {
 
         quote1:"Code ohne Liebe ist nur Text.",
         quote2:"Es gibt keine Probleme, nur Lösungen.",
+
+        job1_title:"UX/UI Designer & Web Developer",
+        job1_company:"Network Publishing GmbH",
+        job1_location:"Köln (Hybrid)  - 2025",
+        job1_description1:"Entwicklung moderner, benutzerfreundlicher und barrierefreier Designs",
+        job1_description2:"Integration und Anpassung von Designs in TYPO3 unter Verwendung von TypoScript, HTML und SCSS (Responsive Design)",
+
+        job2_title:"UX/UI Designer",
+        job2_company:"Sign:up GmbH - 2023 - 2024",
+        job2_location:"Duisburg - DE (Remote)",
+        job2_description1:"Erstellung benutzerfreundlicher, benutzerorientierter Designs",
+        job2_description2:"Enge Zusammenarbeit mit Entwicklern",
+
+        job3_title:"UX/UI Designer",
+        job3_company:"Faktor E GmbH - 2021 - 2023",
+        job3_location:"Bonn - DE (Hybrid)",
+        job3_description1:"Erstellung benutzerfreundlicher, benutzerorientierter Designs",
+        job3_description2:"Enge Zusammenarbeit mit Entwicklern",
+        job3_description3:"HTML- und CSS-Anpassungen (Responsive Design)",
+
+        job4_title:"Graphic & Web Designer / Team lead",
+        job4_company:"Hemd & Hoodie - 2017 - 2020",
+        job4_location:"Köln - DE",
+        job4_description1:"Leitung eines Teams von Designern",
+        job4_description2:"Entwicklung von Designs (Social Media, Werbekampagnen)",
+
+        job5_title:"Graphic & Web Designer",
+        job5_company:"Hemd & Hoodie - 2014 - 2017",
+        job5_location:"Köln - DE",
+        job5_description1:"Entwicklung von Designs (Social Media, Werbekampagnen, Zeitschriften usw.)",
+
+        job6_title:"Graphic & Web Designer",
+        job6_company:"Hellbrecht Optics - 2014",
+        job6_location:"Hilden - DE",
+        job6_description1:"Entwicklung von Designs für E-Commerce, Werbekampagnen usw.",
+
+        job7_title:"Graphic & Web Designer",
+        job7_company:"LoFi-Merchandise - 2012 - 2014 ",
+        job7_location:"Köln - DE",
+        job7_description1:"Design-Entwicklung für Bands und Festivals",
+        job7_description2:"Shop- & Schaufensterdekoration (Graffiti, Malerei, Aufkleber usw.)",
 
         languages: "Sprachen",
 
