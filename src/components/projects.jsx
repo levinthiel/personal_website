@@ -10,53 +10,43 @@ export default function Projects({ t, setLang, lang }) {
                 <p>{t("projectsText")}</p>
             </TextContainer>
             <ProjectCardWrapper>
-                <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank">
                     <ProjectCard>
-                        <ImageContainer>
-                            <Image
-                                src="/forcefield.png"
-                                width={190}
-                                height={190}
-                                alt="Forcefield Logo"
-                                title="Forcefield - Chronicles from the Edge - Science fiction short stories"
-                            />
-                        </ImageContainer>
-                            <Styledbutton type="button">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                                </svg>
-                                Demo
+                        <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank" >
+                            <Styledbutton type="button" $color="red">
+                                Force Field Demo
                             </Styledbutton>
+                        </DemoLink>
+                        <DemoLink href="https://github.com/levinthiel/forcefield" target="_blank" >
+                            <Styledbutton type="button" $color="red">
+                                Force Field Repo
+                            </Styledbutton>
+                        </DemoLink>
                     </ProjectCard>
-                </DemoLink>
-                <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank">
                     <ProjectCard>
-                        {/* <ImageContainer>
-                            <Image
-                                src="/forcefield.png"
-                                width={190}
-                                height={190}
-                                alt="Forcefield Logo"
-                                title="Forcefield - Chronicles from the Edge - Science fiction short stories"
-                            />
-                        </ImageContainer> */}
-                            <Styledbutton type="button">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                                </svg>
-                                Demo
+                        <DemoLink href="https://rooted-capstone.vercel.app/home" target="_blank" >
+                            <Styledbutton type="button" $color="green">
+                                Rooted Demo
                             </Styledbutton>
+                        </DemoLink>
+                        <DemoLink href="https://github.com/StephMode/plant-pal" target="_blank" >
+                            <Styledbutton type="button" $color="green">
+                                Rooted Repo
+                            </Styledbutton>
+                        </DemoLink>
                     </ProjectCard>
-                </DemoLink>
             </ProjectCardWrapper>
         </ProjectsContainer>
 )}
-const DemoLink = styled.a``;
+const DemoLink = styled.a`
+    height: 100%;
+    width: 100%;
+`;
 const ProjectsContainer= styled.div `
     margin-top: 12px;
     display: flex;
     gap: 12px;
     width: auto;
+    height: 100%;
 `;
 const TextContainer = styled.div `
     background: var(--white);
@@ -83,6 +73,7 @@ const ProjectCard = styled.div`
     gap: 16px;
     align-items: end;
     justify-content: space-between;
+    height: 100%;
 
     &:hover {
         div {
@@ -109,16 +100,28 @@ const ImageContainer = styled.div`
     }
 `;
 const Styledbutton = styled.button `
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 12px;
     align-items: center;
     cursor: pointer;
-    background-color: var(--blue);
+    background: ${(props) =>
+    props.$color === "green"
+        ? "#0C3B2E"
+        : props.$color === "red"
+        ? "#B41B06"
+        : "#008CFF"};
     color: var(--white);
     padding: 5px 16px;
     border-radius: 7px;
     text-align: center;
-    transition: all ease .3s;    
+    transition: all ease .3s;  
+    justify-content: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
 
     svg {
         width: 20px;
