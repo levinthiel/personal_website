@@ -1,40 +1,40 @@
 import styled from "styled-components";
 import Image from 'next/image'
+import { FaGithub } from "react-icons/fa6";
 
 export default function Projects({ t, setLang, lang }) {
     return (
         
         <ProjectsContainer>
-            <TextContainer>
-                <h2>{t("projectsH2")}</h2>
-                <p>{t("projectsText")}</p>
-            </TextContainer>
-            <ProjectCardWrapper>
-                    <ProjectCard>
-                        <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank" >
+            <ProjectTextandCard>
+                <TextContainer>
+                    <h2>{t("projectsH2")}</h2>
+                    <p>{t("projectsText")}</p>
+                </TextContainer>
+{/*                 <ProjectCardWrapper>
+                        <ProjectCard>
+                            
+                        </ProjectCard>
+                </ProjectCardWrapper> */}
+            </ProjectTextandCard>
+            <ProjectsButtons>
+                <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank" >
                             <Styledbutton type="button" $color="red">
                                 Force Field Demo
                             </Styledbutton>
                         </DemoLink>
                         <DemoLink href="https://github.com/levinthiel/forcefield" target="_blank" >
-                            <Styledbutton type="button" $color="red">
-                                Force Field Repo
-                            </Styledbutton>
+                            <FaGithub />
                         </DemoLink>
-                    </ProjectCard>
-                    <ProjectCard>
                         <DemoLink href="https://rooted-capstone.vercel.app/home" target="_blank" >
                             <Styledbutton type="button" $color="green">
                                 Rooted Demo
                             </Styledbutton>
                         </DemoLink>
                         <DemoLink href="https://github.com/StephMode/plant-pal" target="_blank" >
-                            <Styledbutton type="button" $color="green">
-                                Rooted Repo
-                            </Styledbutton>
+                            <FaGithub />
                         </DemoLink>
-                    </ProjectCard>
-            </ProjectCardWrapper>
+            </ProjectsButtons>
         </ProjectsContainer>
 )}
 const DemoLink = styled.a`
@@ -42,11 +42,16 @@ const DemoLink = styled.a`
     width: 100%;
 `;
 const ProjectsContainer= styled.div `
-    margin-top: 12px;
     display: flex;
+    flex-direction: column;
+    margin-top: 12px;
     gap: 12px;
     width: auto;
     height: 100%;
+`;
+const ProjectTextandCard = styled.div`
+    display: flex;
+    gap: 1rem;
 `;
 const TextContainer = styled.div `
     background: var(--white);
@@ -99,6 +104,24 @@ const ImageContainer = styled.div`
         transition: all cubic-bezier(0.68, -0.6, 0.32, 1.6) .3s;
     }
 `;
+const ProjectsButtons = styled.div`
+    display: flex;
+    padding: 12px;
+    background: var(--white);
+    border-radius: 12px;
+    gap: 12px;
+    align-items: center;
+
+    svg {
+        width: 26px;
+        height: auto;
+        transition: all ease .3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+`;
 const Styledbutton = styled.button `
     width: 100%;
     height: 100%;
@@ -120,7 +143,7 @@ const Styledbutton = styled.button `
     justify-content: center;
 
     &:hover {
-        opacity: 0.9;
+        transform: scale(1.05);
     }
 
     svg {
