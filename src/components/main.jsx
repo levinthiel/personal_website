@@ -7,6 +7,7 @@ import Languages from "@/components/languages";
 import Hobbies from "@/components/hobbies";
 import Projects from "@/components/projects"
 import Links from "@/components/links"
+import Jumplinks from "@/components/jumplinks"
 import Jobs from "@/components/jobs"
 import Trainings from "@/components/trainings"
 
@@ -23,6 +24,7 @@ export default function Main({ t, setLang, lang }) {
       <Trainings  t={t} setLang={setLang} lang={lang}/>      
       <Hobbies    t={t} setLang={setLang} lang={lang}/>
       <Links      t={t} setLang={setLang} lang={lang}/>
+      <Jumplinks  t={t} setLang={setLang} lang={lang}/>
     </StyledMain>
   );
 }

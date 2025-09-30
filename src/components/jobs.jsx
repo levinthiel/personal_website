@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function Jobs({ t, setLang, lang }) {
     return (
         <JobsContainer>
-            <h2>Work Experience</h2>
+            <h2>{t("jobsH2")}</h2>
             <Jobz>
                 <Job>
                     <JobTitleandInfos>
