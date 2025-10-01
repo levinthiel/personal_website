@@ -1,44 +1,57 @@
 import styled from "styled-components";
 import Image from 'next/image'
+import { FaGithub } from "react-icons/fa6";
 
-export default function Projects({ t, setLang, lang }) {
+export default function Projects({id, t, setLang, lang }) {
     return (
-        <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank">
-        <ProjectsContainer>
-            <TextContainer>
-                <h2>{t("projectsH2")}</h2>
-                <p>{t("projectsText")}</p>
-
-                <p>Other projects:</p> 
-                <button type="button">Rooted</button>
-            </TextContainer>
-            <ProjectCard>
-                <ImageContainer>
-                    <Image
-                        src="/forcefield.png"
-                        width={190}
-                        height={190}
-                        alt="Forcefield Logo"
-                        title="Forcefield - Chronicles from the Edge - Science fiction short stories"
-                    />
-                </ImageContainer>
-                
-                    <Styledbutton type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                        </svg>
-                        Demo
-                    </Styledbutton>
-            </ProjectCard>
+        
+        <ProjectsContainer id={id}>
+            <ProjectTextandCard>
+                <TextContainer>
+                    <h2>{t("projectsH2")}</h2>
+                    <p>{t("projectsText")}</p>
+                </TextContainer>
+{/*                 <ProjectCardWrapper>
+                        <ProjectCard>
+                            
+                        </ProjectCard>
+                </ProjectCardWrapper> */}
+            </ProjectTextandCard>
+            <ProjectsButtons>
+                <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank" >
+                            <Styledbutton type="button" $color="red">
+                                Force Field Demo
+                            </Styledbutton>
+                        </DemoLink>
+                        <DemoLink href="https://github.com/levinthiel/forcefield" target="_blank" >
+                            <FaGithub />
+                        </DemoLink>
+                        <DemoLink href="https://rooted-capstone.vercel.app/home" target="_blank" >
+                            <Styledbutton type="button" $color="green">
+                                Rooted Demo
+                            </Styledbutton>
+                        </DemoLink>
+                        <DemoLink href="https://github.com/StephMode/plant-pal" target="_blank" >
+                            <FaGithub />
+                        </DemoLink>
+            </ProjectsButtons>
         </ProjectsContainer>
-    </DemoLink>
 )}
-const DemoLink = styled.a``;
+const DemoLink = styled.a`
+    height: 100%;
+    width: 100%;
+`;
 const ProjectsContainer= styled.div `
-    margin-top: 12px;
     display: flex;
+    flex-direction: column;
+    margin-top: 12px;
     gap: 12px;
     width: auto;
+    height: 100%;
+`;
+const ProjectTextandCard = styled.div`
+    display: flex;
+    gap: 1rem;
 `;
 const TextContainer = styled.div `
     background: var(--white);
@@ -50,17 +63,22 @@ const TextContainer = styled.div `
     flex-direction: column;
     gap: 16px;
 `;
+const ProjectCardWrapper = styled.div`
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+`;
 const ProjectCard = styled.div`
     background: var(--white);
     padding: 12px;
     border-radius: 12px;
-    min-height: 100%;
     min-width: 170px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: end;
     justify-content: space-between;
+    height: 100%;
 
     &:hover {
         div {
@@ -86,17 +104,47 @@ const ImageContainer = styled.div`
         transition: all cubic-bezier(0.68, -0.6, 0.32, 1.6) .3s;
     }
 `;
+const ProjectsButtons = styled.div`
+    display: flex;
+    padding: 12px;
+    background: var(--white);
+    border-radius: 12px;
+    gap: 12px;
+    align-items: center;
+
+    svg {
+        width: 26px;
+        height: auto;
+        transition: all ease .3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+`;
 const Styledbutton = styled.button `
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 12px;
     align-items: center;
     cursor: pointer;
-    background-color: var(--blue);
+    background: ${(props) =>
+    props.$color === "green"
+        ? "#0C3B2E"
+        : props.$color === "red"
+        ? "#B41B06"
+        : "#008CFF"};
     color: var(--white);
     padding: 5px 16px;
     border-radius: 7px;
     text-align: center;
-    transition: all ease .3s;    
+    transition: all ease .3s;  
+    justify-content: center;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     svg {
         width: 20px;

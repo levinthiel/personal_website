@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import styled from "styled-components";
 
-export default function Hobbies({ t, setLang, lang }) {
+export default function Hobbies({id, t, setLang, lang }) {
     return (
-        <HobbiesSection>
+        <HobbiesSection id={id}>
             <h2>{t("hobbies")}</h2>
             <p>{t("hobbiesText")}</p>
         </HobbiesSection>

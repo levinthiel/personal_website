@@ -9,7 +9,9 @@
   --lightblue:#f2f9ff;
   --green:    #2ABE3E;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: linear-gradient(180deg, rgb(246, 246, 246)  0%, rgb(232, 232, 232) 100%) fixed;
   background-image: url(../../public/concrete_wall.png) ;
@@ -41,7 +43,7 @@ p, button, small, li {
 small {
   font-size: 70%;
 }
-header button.active {
+header button.active, #jumplinks button.active {
   background: var(--white);
   border-radius: 50%;
 }
