@@ -17,37 +17,37 @@ export default function Jumplinks({ t, setLang, lang }) {
             <ul>
                 <li>
                     <a href="#skills">
-                        <FaTools /> 
+                        <FaTools title="Skills" /> 
                         <p>{t("skillsH2")}</p>
                     </a>
                 </li>
                 <li>
                     <a href="#languages">
-                        <FaFlag /> 
+                        <FaFlag title="Languages"/> 
                         <p>{t("languages")}</p>
                     </a>
                 </li>
                 <li>
                     <a href="#jobs">
-                        <FaFileAlt /> 
+                        <FaFileAlt title="Jobs" /> 
                         <p>{t("jobsH2")}</p>
                     </a>
                 </li>
                 <li>
                     <a href="#projects">
-                        <FaPalette /> 
+                        <FaPalette title="Projects"/> 
                         <p>{t("projectsH2")}</p>
                     </a>
                 </li>
                 <li>
                     <a href="#trainings">
-                        <IoMdSchool /> 
+                        <IoMdSchool title="Training"/> 
                         <p>{t("trainingH2")}</p>
                     </a>
                 </li>
                 <li>
                     <a href="#hobbies">
-                        <IoPlanet /> 
+                        <IoPlanet title="Hobbies"/> 
                         <p>{t("hobbies")}</p>
                     </a>
                 </li>
@@ -81,6 +81,32 @@ const JumpLinks = styled.aside`
             p {
                 display: none;
             }
+        }
+    }
+    @media (max-width: 576px) {
+        display: flex;
+        top: auto;
+        bottom: 8px;
+        left: 6px;
+        right: 6px;
+        width: 97%;
+        height: 40px;
+        margin: auto;
+        align-items: center;
+        gap: 16px;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, .8);
+
+        ul {
+            display: flex;
+            padding-top: 0;
+            gap: 10px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        a svg {
+            width: 15px !important;
         }
     }
 
@@ -118,6 +144,14 @@ const LanguagesContainer = styled.div`
         gap: 2px;
         padding-bottom: 6px;
         border-bottom: 2px solid white;
+    }
+    @media (max-width: 576px) {
+        flex-direction: row;
+        padding: 0;
+        gap: 8px;
+        border: 0;
+        width: 100%;
+        justify-content: space-around;
     }
 
         button {

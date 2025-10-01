@@ -3,7 +3,7 @@ import Languages from "@/components/languages";
 export const texts = {
     en: {
         welcome: "Welcome",
-        availability: "Open to work",
+        availability: "Available",
         introH1: "Hi, I'm Levin",
         introP: "a Full stack Designer(UX/UI designer and a Frontend developer) with over 10 years experience.",
         
