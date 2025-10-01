@@ -14,18 +14,20 @@ import Trainings from "@/components/trainings"
 // Footer.jsx
 export default function Main({ t, setLang, lang }) {
   return (
-    <StyledMain>
-      <Header     t={t} setLang={setLang} lang={lang}/>
-      <Skills     t={t} setLang={setLang} lang={lang}/>
-      <Quote      t={t} setLang={setLang} lang={lang}/>
-      <Languages  t={t} setLang={setLang} lang={lang}/>
-      <Jobs       t={t} setLang={setLang} lang={lang}/>
-      <Projects   t={t} setLang={setLang} lang={lang}/>
-      <Trainings  t={t} setLang={setLang} lang={lang}/>      
-      <Hobbies    t={t} setLang={setLang} lang={lang}/>
-      <Links      t={t} setLang={setLang} lang={lang}/>
+    <>
       <Jumplinks  t={t} setLang={setLang} lang={lang}/>
-    </StyledMain>
+      <StyledMain>
+        <Header                     t={t} setLang={setLang} lang={lang}/>
+        <Skills     id="skills"     t={t} setLang={setLang} lang={lang}/>
+        <Quote                      t={t} setLang={setLang} lang={lang}/>
+        <Languages  id="languages"  t={t} setLang={setLang} lang={lang}/>
+        <Jobs       id="jobs"       t={t} setLang={setLang} lang={lang}/>
+        <Projects   id="projects"   t={t} setLang={setLang} lang={lang}/>
+        <Trainings  id="trainings"  t={t} setLang={setLang} lang={lang}/>      
+        <Hobbies    id="hobbies"    t={t} setLang={setLang} lang={lang}/>
+        <Links                      t={t} setLang={setLang} lang={lang}/>  
+      </StyledMain>
+    </>
   );
 }
 

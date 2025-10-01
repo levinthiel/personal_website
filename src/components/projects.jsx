@@ -2,10 +2,10 @@ import styled from "styled-components";
 import Image from 'next/image'
 import { FaGithub } from "react-icons/fa6";
 
-export default function Projects({ t, setLang, lang }) {
+export default function Projects({id, t, setLang, lang }) {
     return (
         
-        <ProjectsContainer>
+        <ProjectsContainer id={id}>
             <ProjectTextandCard>
                 <TextContainer>
                     <h2>{t("projectsH2")}</h2>

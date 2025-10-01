@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 
-export default function Skills({ t, setLang, lang }) {
+export default function Skills({id, t, setLang, lang }) {
     const [isOpen, setIsOpen] = useState(true);
     const contentRef = useRef(null);
     const [maxHeight, setMaxHeight] = useState("0px");
@@ -18,7 +18,7 @@ export default function Skills({ t, setLang, lang }) {
     }
 
     return (
-        <SkillsContainer>
+        <SkillsContainer id={id}>
             <HeaderBar>
                 <h2>{t("skillsH2")}</h2>
 

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { FaLocationDot } from "react-icons/fa6";
 
-export default function Jobs({ t, setLang, lang }) {
+export default function Jobs({id, t, setLang, lang }) {
     return (
-        <JobsContainer>
+        <JobsContainer id={id}>
             <h2>{t("jobsH2")}</h2>
             <Jobz>
                 <Job>

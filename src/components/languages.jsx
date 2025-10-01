@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import styled from "styled-components";
 
-export default function Languages({ t, setLang, lang }) {
+export default function Languages({id,  t, setLang, lang }) {
     return (
-        <LanguaguesSection>
+        <LanguaguesSection id={id}>
             <h2>{t("languages")}</h2>
             <FlagContainer>
                 <Language>

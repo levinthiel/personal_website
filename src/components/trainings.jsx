@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-export default function Trainings({ t, setLang, lang }) {
+export default function Trainings({ id, t, setLang, lang }) {
     return (
-        <TrainingsContainer>
+        <TrainingsContainer id={id}>
             <h2>{t("trainingH2")}</h2>
             <CourseContainer>
                 <div>
