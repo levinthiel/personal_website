@@ -100,7 +100,7 @@ const JumpLinks = styled.aside`
         ul {
             display: flex;
             padding-top: 0;
-            gap: 10px;
+            gap: unset;
             width: 100%;
             justify-content: space-between;
         }
@@ -152,6 +152,8 @@ const LanguagesContainer = styled.div`
         border: 0;
         width: 100%;
         justify-content: space-around;
+        border-right: 1px solid lightgray;
+        padding-right: 14px;
     }
 
         button {

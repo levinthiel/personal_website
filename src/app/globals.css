@@ -52,3 +52,6 @@ header button.active {
   border-radius: 50%;
   color: var(--white);
 }
+footer {
+  text-align: center;
+}

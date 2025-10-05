@@ -162,6 +162,12 @@ const ImageContainer = styled.div`
     img {
         border-radius: 50%;
         border: solid 3px var(--blue);
+        transition:all ease .3s;
+
+        &:hover {
+            transform: scale(1.5) rotate(10deg);
+            box-shadow: 0px 0px 12px var(--blue) ;
+        }
     }
 `;
 const TextContainer = styled.div`
