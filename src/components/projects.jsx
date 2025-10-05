@@ -9,7 +9,8 @@ export default function Projects({id, t, setLang, lang }) {
             <ProjectTextandCard>
                 <TextContainer>
                     <h2>{t("projectsH2")}</h2>
-                    <p>{t("projectsText")}</p>
+                    <p>{t("projectsText1")}</p>
+                    <p>{t("projectsText2")}</p>
                 </TextContainer>
 {/*                 <ProjectCardWrapper>
                         <ProjectCard>

@@ -76,14 +76,18 @@ export const texts = {
 
 
         languages: "Languages",
+        languagesFRDE: "Native",
+        languagesEN: "Fluent",
+        languagesES: "Intermediate",
 
         hobbies:"Hobbies",
         hobbiesText:"I am passionate about everything related to science fiction, comics, graphic novels and other fantastic worlds. I love spending time with my wife, my child and my friends. Likewise, I am also interested in nature, gardening and the environment, drawing, tinkering with my bicycles, my cat, video games, reading and role-playing games. ",
 
         projectsH2:"Projects",
-        projectsText:"Force Field is a personal project — a small Next.js app where I bring together my writing and cover art. It’s a space where I can combine different skills and experiment with design and development. Rooted was a group project created with friends and colleagues, inspired by our shared love of plants (and clean code). We worked in sprints, reviewed each other’s code, brainstormed, pair-coded, and learned a lot while having fun. I hope you’ll enjoy exploring both of these projects as much as I enjoyed building them.",
+        projectsText1:"Force Field is a personal project — a small Next.js app where I bring together my writing and cover art. It’s a space where I can combine different skills and experiment with design and development.",
+        projectsText2:" Rooted was a group project created with friends and colleagues, inspired by our shared love of plants (and clean code). We worked in sprints, reviewed each other’s code, brainstormed, pair-coded, and learned a lot while having fun. I hope you’ll enjoy exploring both of these projects as much as I enjoyed building them.",
 
-        trainingH2:"Trainings",
+        trainingH2:"Qualifications",
         training1H3:"Web Developer",
         training2H3:"UX/UI Designer",
         training3H3:"JS & PHP basics",
@@ -165,12 +169,16 @@ export const texts = {
         job7_description2:"Décoration de la surface du magasin (graffiti, peinture, stickers, etc.)",
 
         languages: "Langues",
+        languagesFRDE: "Langue maternelle",
+        languagesEN: "Courant",
+        languagesES: "Intermédiaire",
 
         hobbies:"Loisirs",
         hobbiesText:"Je suis passionné par tout ce qui touche à la science-fiction, aux comics, aux BD et autres univers imaginaires, j’adore passer du temps avec ma femme, mon enfant et mes amis. Je m’intéresse aussi à la nature, au jardinage et à l’environnement, au dessin, ainsi qu’au bricolage de mes vélos, à mon chat, aux jeux vidéo, à la lecture et aux jeux de rôle.",
 
         projectsH2:"Projets",
-        projectsText:"Force Field est un projet personnel, une petite application Next.js où je rassemble mes écrits et mes couvertures d'histoires. C'est un espace dans lequel je peux combiner différentes compétences et expérimenter le design et le développement. Rooted était un projet collectif créé avec des amis et des collègues, inspiré par notre amour partagé des plantes (et du code). Nous avons travaillé par sprints, revu le code de chacun, réfléchi ensemble, codé en binôme et beaucoup appris tout en nous amusant. J'espère que vous prendrez autant de plaisir à découvrir ces deux projets que j'en ai pris à les créer.",
+        projectsText1:"Force Field est un projet personnel, une petite application Next.js où je rassemble mes écrits et mes couvertures d'histoires. C'est un espace dans lequel je peux combiner différentes compétences et expérimenter le design et le développement.",
+        projectsText2:"Rooted était un projet collectif créé avec des amis et des collègues, inspiré par notre amour partagé des plantes (et du code). Nous avons travaillé par sprints, revu le code de chacun, réfléchi ensemble, codé en binôme et beaucoup appris tout en nous amusant. J'espère que vous prendrez autant de plaisir à découvrir ces deux projets que j'en ai pris à les créer.",
 
         trainingH2:"Formations",
         training1H3:"Développeur Web",
@@ -253,12 +261,16 @@ export const texts = {
         job7_description2:"Shop- & Schaufensterdekoration (Graffiti, Malerei, Aufkleber usw.)",
 
         languages: "Sprachen",
+        languagesFRDE: "Muttersprache",
+        languagesEN: "Fließend",
+        languagesES: "Fortgeschrittener Anfänger",
 
         hobbies:"Hobbys",
         hobbiesText:"Ich interessiere mich leidenschaftlich für alles, was mit Science-Fiction, Comics, Graphic Novels und anderen fantastischen Welten zu tun hat. Ich verbringe gerne Zeit mit meiner Frau, meinem Kind und meinen Freunden. Außerdem interessiere ich mich für Natur, Gartenarbeit und Umwelt, Zeichnen, Basteln an meinen Fahrrädern, meine Katze, Videospiele, Lesen und Rollenspiele. ",
 
         projectsH2:"Projekte",
-        projectsText:"Force Field ist ein persönliches Projekt – eine kleine Next.js-App, in der ich meine Texte und Cover-Art zusammenführe. Es ist ein Raum, in dem ich verschiedene Fähigkeiten kombinieren und mit Design und Entwicklung experimentieren kann. Rooted war ein Gruppenprojekt, das ich mit Freunden und Kollegen ins Leben gerufen habe, inspiriert von unserer gemeinsamen Liebe zu Pflanzen (und sauberem Code). Wir haben in Sprints gearbeitet, den Code der anderen überprüft, Brainstorming betrieben, gemeinsam programmiert und dabei viel gelernt und Spaß gehabt. Ich hoffe, Ihnen macht die Erkundung dieser beiden Projekte genauso viel Spaß wie mir ihre Entwicklung.",
+        projectsText1:"Force Field ist ein persönliches Projekt – eine kleine Next.js-App, in der ich meine Texte und Cover-Art zusammenführe. Es ist ein Raum, in dem ich verschiedene Fähigkeiten kombinieren und mit Design und Entwicklung experimentieren kann.",
+        projectsText2:" Rooted war ein Gruppenprojekt, das ich mit Freunden und Kollegen ins Leben gerufen habe, inspiriert von unserer gemeinsamen Liebe zu Pflanzen (und sauberem Code). Wir haben in Sprints gearbeitet, den Code der anderen überprüft, Brainstorming betrieben, gemeinsam programmiert und dabei viel gelernt und Spaß gehabt. Ich hoffe, Ihnen macht die Erkundung dieser beiden Projekte genauso viel Spaß wie mir ihre Entwicklung.",
 
         trainingH2:"Schulungen",
         training1H3:"Webentwickler",

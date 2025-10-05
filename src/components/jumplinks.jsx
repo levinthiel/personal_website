@@ -106,7 +106,7 @@ const JumpLinks = styled.aside`
         }
 
         a svg {
-            width: 15px !important;
+            width: 18px !important;
         }
     }
 
@@ -116,6 +116,7 @@ const JumpLinks = styled.aside`
         display: flex;
         align-items: center;
         transition: all ease .3s;
+        gap: 7px;
 
         &:hover {
             transform: scale(1.05);
@@ -127,7 +128,6 @@ const JumpLinks = styled.aside`
             width: 12px;
         }
 
-    gap: 7px;
         &:hover {
             background: var(--white);
         }
@@ -156,7 +156,7 @@ const LanguagesContainer = styled.div`
 
         button {
             transition: all ease .3s;
-            padding: 4px 5px;
+            padding: 4px 6px;
             font-size: 13px; 
 
             &:hover{
