@@ -15,7 +15,7 @@ export default function Languages({id,  t, setLang, lang }) {
                         alt="Drapeau Francais"
                         title="Francais"
                     />
-                    <p>Native</p>
+                    <p>{t("languagesFRDE")}</p>
                 </Language>
                 <Language>
                     <Image
@@ -25,7 +25,7 @@ export default function Languages({id,  t, setLang, lang }) {
                         alt="Detusche Flagge"
                         title="Deutsch"
                     />
-                    <p>Native</p>
+                    <p>{t("languagesFRDE")}</p>
                 </Language>
                 <Language>
                     <Image
@@ -35,7 +35,7 @@ export default function Languages({id,  t, setLang, lang }) {
                         alt="English Flag"
                         title="English"
                     />
-                    <p>Fluent</p>
+                    <p>{t("languagesEN")}</p>
                 </Language>
                 <Language>
                     <Image
@@ -45,7 +45,7 @@ export default function Languages({id,  t, setLang, lang }) {
                         alt="Spanish Flag"
                         title="Español"
                     />
-                    <p>intermediate</p>
+                    <p>{t("languagesES")}</p>
                 </Language>
             </FlagContainer>
         </LanguaguesSection>
