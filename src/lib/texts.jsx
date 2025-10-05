@@ -34,32 +34,34 @@ export const texts = {
 
         jobsH2:"Work Experience",
         job1_title:"UX/UI Designer & Web Developer",
-        job1_company:"Network Publishing GmbH",
-        job1_location:"Cologne (Hybrid)  - 2025",
+        job1_company:"Network Publishing GmbH  - 2025",
+        job1_location:"Cologne (Hybrid)",
         job1_description1:"Creation of modern, user-friendly & accessible designs",
         job1_description2:"Integration and adaptation of designs in TYPO3 using TypoScript, HTML and SCSS (responsive design)",
 
         job2_title:"UX/UI Designer",
-        job2_company:"Sign:up GmbH - 2023 - 2024",
+        job2_company:"Sign:up GmbH - (2023-2024)",
         job2_location:"Duisburg - DE (Remote)",
         job2_description1:"Creation of user-friendly, user-oriented designs",
         job2_description2:"Close collaboration with developers",
 
         job3_title:"UX/UI Designer",
-        job3_company:"Faktor E GmbH - 2021 - 2023",
+        job3_company:"Faktor E GmbH - (2021-2023)",
         job3_location:"Bonn - DE (Hybrid)",
         job3_description1:"Creation of user-friendly, user-oriented designs",
         job3_description2:"Close collaboration with developers",
         job3_description3:"HTML & CSS adaptations (responsive design)",
+        job3_description4:"Project management",
 
         job4_title:"Graphic & Web Designer / Team lead",
-        job4_company:"Hemd & Hoodie - 2017 - 2020",
+        job4_company:"Hemd & Hoodie - (2017-2021)",
         job4_location:"Cologne - DE",
         job4_description1:"Management of a team of designers",
         job4_description2:"Development of designs (social media, advertising campaigns)",
+        job4_description3:"Project management",
 
         job5_title:"Graphic & Web Designer",
-        job5_company:"Hemd & Hoodie - 2014 - 2017",
+        job5_company:"Hemd & Hoodie - (2014-2017)",
         job5_location:"Cologne - DE",
         job5_description1:"Development of designs (social media, advertising campaigns, magazines, etc.)",
 
@@ -69,7 +71,7 @@ export const texts = {
         job6_description1:"Development of designs for e-commerce, advertising campaigns, etc.",
 
         job7_title:"Graphic & Web Designer",
-        job7_company:"LoFi-Merchandise - 2012 - 2014 ",
+        job7_company:"LoFi-Merchandise - (2012-2014)",
         job7_location:"Cologne - DE",
         job7_description1:"Design creation for bands and festivals",
         job7_description2:"Shopfront decoration (graffiti, painting, stickers, etc.)",
@@ -93,6 +95,8 @@ export const texts = {
         training3H3:"JS & PHP basics",
         training4H3:"Applied arts and graphic design",
         training5H3:"Bachelor's degree in engineering sciences",
+
+        linksH2:"You can find me here as well:",
 
     },
     fr: {
@@ -128,32 +132,34 @@ export const texts = {
 
         jobsH2:"Expérience",
         job1_title:"UX/UI Designer & Développeur Web",
-        job1_company:"Network Publishing GmbH",
-        job1_location:"Cologne - DE (Hybride)  - 2025",
+        job1_company:"Network Publishing GmbH  - 2025",
+        job1_location:"Cologne - DE (Hybride)",
         job1_description1:"Création de webdesigns accessibles et orientés utilisateurs",
         job1_description2:"Intégration et adaptation des designs sous TYPO3 avec TypoScript, HTML et SCSS (responsive design)",
 
         job2_title:"UX/UI Designer",
-        job2_company:"Sign:up GmbH - 2023 - 2024",
+        job2_company:"Sign:up GmbH - (2023-2024)",
         job2_location:"Duisburg - DE (Télétravail)",
         job2_description1:"Création de webdesigns accessibles et orientés utilisateurs",
         job2_description2:"Collaboration étroite avec les développeurs",
 
         job3_title:"UX/UI Designer",
-        job3_company:"Faktor E GmbH - 2021 - 2023",
+        job3_company:"Faktor E GmbH - (2021-2023)",
         job3_location:"Bonn - DE (Hybride)",
         job3_description1:"Création de webdesigns accessibles et orientés utilisateurs",
         job3_description2:"Collaboration étroite avec les développeurs",
         job3_description3:"Adaptations HTML & CSS (responsive design)",
+        job3_description4:"Management de projets",
 
         job4_title:"Graphiste & Web Designer / Responsable d'équipe",
-        job4_company:"Hemd & Hoodie - 2017 - 2020",
+        job4_company:"Hemd & Hoodie - (2017-2020)",
         job4_location:"Cologne - DE",
         job4_description1:"Direction d'équipe de designers",
         job4_description2:"Création de designs (réseaux sociaux, campagnes publicitaires)",
+        job4_description3:"Management de projets",
 
         job5_title:"Graphiste & Web Designer",
-        job5_company:"Hemd & Hoodie - 2014 - 2017",
+        job5_company:"Hemd & Hoodie - (2014-2017)",
         job5_location:"Cologne - DE",
         job5_description1:"Création de designs (médias sociaux, campagnes publicitaires, magazines, etc)",
 
@@ -163,14 +169,14 @@ export const texts = {
         job6_description1:"Création de designs pour l'E-commerce, campagnes publicitaires…",
 
         job7_title:"Graphic & Web Designer",
-        job7_company:"LoFi-Merchandise - 2012 - 2014 ",
+        job7_company:"LoFi-Merchandise - (2012-2014)",
         job7_location:"Cologne - DE",
         job7_description1:"Création de designs pour groupes de musique et festivals",
         job7_description2:"Décoration de la surface du magasin (graffiti, peinture, stickers, etc.)",
 
         languages: "Langues",
         languagesFRDE: "Langue maternelle",
-        languagesEN: "Courant",
+        languagesEN: "Compétent",
         languagesES: "Intermédiaire",
 
         hobbies:"Loisirs",
@@ -186,13 +192,15 @@ export const texts = {
         training3H3:"Cours de base JS & PHP",
         training4H3:"Arts appliqués et graphisme",
         training5H3:"Baccalauréat sciences de l'ingénieur",
+
+        linksH2:"Retrouvez-moi également ici:",
     },
     de: {
         welcome:"Willkommen",
         availability: "Verfügbar",
         introH1: "Hi, ich bin Levin",
         introP: "ein Full-Stack-Designer (UX/UI-Designer und Frontend-Entwickler) mit über 10 Jahren Erfahrung.",
-        introP2: " Ich bin darauf spezialisiert, innovative digitale Erlebnisse zu schaffen, die Nutzer begeistern und Ergebnisse erzielen. Mit anderen Worten: Ich schiebe Pixels und mache das Internet zu einem schöneren Ort.",
+        introP2: " Ich bin darauf spezialisiert, innovative digitale Erlebnisse zu schaffen, die Nutzer begeistern und Ergebnisse erzielen. Mit anderen Worten: Ich schiebe Pixel und mache das Internet zu einem schöneren Ort.",
         
         skillsH2:"Fähigkeiten",
         skillsgroup1:"Webentwicklung",
@@ -220,32 +228,34 @@ export const texts = {
 
         jobsH2:"Berufserfahrung",
         job1_title:"UX/UI Designer & Web Developer",
-        job1_company:"Network Publishing GmbH",
-        job1_location:"Köln (Hybrid)  - 2025",
+        job1_company:"Network Publishing GmbH - 2025",
+        job1_location:"Köln (Hybrid)",
         job1_description1:"Entwicklung moderner, benutzerfreundlicher und barrierefreier Designs",
         job1_description2:"Integration und Anpassung von Designs in TYPO3 unter Verwendung von TypoScript, HTML und SCSS (Responsive Design)",
 
         job2_title:"UX/UI Designer",
-        job2_company:"Sign:up GmbH - 2023 - 2024",
+        job2_company:"Sign:up GmbH - (2023-2024)",
         job2_location:"Duisburg - DE (Remote)",
         job2_description1:"Erstellung benutzerfreundlicher, benutzerorientierter Designs",
         job2_description2:"Enge Zusammenarbeit mit Entwicklern",
 
         job3_title:"UX/UI Designer",
-        job3_company:"Faktor E GmbH - 2021 - 2023",
+        job3_company:"Faktor E GmbH - (2021-2023)",
         job3_location:"Bonn - DE (Hybrid)",
         job3_description1:"Erstellung benutzerfreundlicher, benutzerorientierter Designs",
         job3_description2:"Enge Zusammenarbeit mit Entwicklern",
         job3_description3:"HTML- und CSS-Anpassungen (Responsive Design)",
+        job3_description4:"Projektmanagement",
 
-        job4_title:"Graphic & Web Designer / Team lead",
-        job4_company:"Hemd & Hoodie - 2017 - 2020",
+        job4_title:"Graphic & Web Designer / Team Lead",
+        job4_company:"Hemd & Hoodie - (2017-2020)",
         job4_location:"Köln - DE",
         job4_description1:"Leitung eines Teams von Designern",
         job4_description2:"Entwicklung von Designs (Social Media, Werbekampagnen)",
+        job4_description3:"Projektmanagement",
 
         job5_title:"Graphic & Web Designer",
-        job5_company:"Hemd & Hoodie - 2014 - 2017",
+        job5_company:"Hemd & Hoodie - (2014-2017)",
         job5_location:"Köln - DE",
         job5_description1:"Entwicklung von Designs (Social Media, Werbekampagnen, Zeitschriften usw.)",
 
@@ -255,7 +265,7 @@ export const texts = {
         job6_description1:"Entwicklung von Designs für E-Commerce, Werbekampagnen usw.",
 
         job7_title:"Graphic & Web Designer",
-        job7_company:"LoFi-Merchandise - 2012 - 2014 ",
+        job7_company:"LoFi-Merchandise - (2012-2014) ",
         job7_location:"Köln - DE",
         job7_description1:"Design-Entwicklung für Bands und Festivals",
         job7_description2:"Shop- & Schaufensterdekoration (Graffiti, Malerei, Aufkleber usw.)",
@@ -265,7 +275,7 @@ export const texts = {
         languagesEN: "Fließend",
         languagesES: "Fortgeschrittener Anfänger",
 
-        hobbies:"Hobbys",
+        hobbies:"Hobbies",
         hobbiesText:"Ich interessiere mich leidenschaftlich für alles, was mit Science-Fiction, Comics, Graphic Novels und anderen fantastischen Welten zu tun hat. Ich verbringe gerne Zeit mit meiner Frau, meinem Kind und meinen Freunden. Außerdem interessiere ich mich für Natur, Gartenarbeit und Umwelt, Zeichnen, Basteln an meinen Fahrrädern, meine Katze, Videospiele, Lesen und Rollenspiele. ",
 
         projectsH2:"Projekte",
@@ -275,8 +285,10 @@ export const texts = {
         trainingH2:"Schulungen",
         training1H3:"Webentwickler",
         training2H3:"UX/UI Designer",
-        training3H3:"JS & PHP basics",
+        training3H3:"JS & PHP Basics",
         training4H3:"Angewandte Kunst und Grafik Design",
-        training5H3:"Bachelor in Ingenieurwissenschaften",
+        training5H3:"Abitur in Ingenieurwissenschaften",
+
+        linksH2:"Sie finden mich auch hier:",
     }
 };

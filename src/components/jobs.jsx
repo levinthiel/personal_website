@@ -38,6 +38,7 @@ export default function Jobs({id, t, setLang, lang }) {
                         <li>{t("job3_description1")}</li>
                         <li>{t("job3_description2")}</li>
                         <li>{t("job3_description3")}</li>
+                        <li>{t("job3_description4")}</li>
                     </JobDescription>
                 </Job>
                 <Job>
@@ -49,6 +50,7 @@ export default function Jobs({id, t, setLang, lang }) {
                     <JobDescription>
                         <li>{t("job4_description1")}</li>
                         <li>{t("job4_description2")}</li>
+                        <li>{t("job4_description3")}</li>
                     </JobDescription>
                 </Job>
                 <Job>

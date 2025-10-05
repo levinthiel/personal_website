@@ -8,7 +8,7 @@ import { FaSpotify } from "react-icons/fa";
 export default function Links({ t, setLang, lang }) {
     return (
         <LanguaguesSection>
-            <h2>You can find me here as well:</h2>
+            <h2>{t("linksH2")}</h2>
             <LinkContainer>
                 <Link>
                     <a href='https://www.linkedin.com/in/levin-thiel/'>
