@@ -86,6 +86,10 @@ const QuoteItem = styled.div`
         font-style: italic;
         font-weight: 400;
         line-height: 1.3;
+
+        @media (max-width: 576px) {
+            font-size: 20px;
+        }
     }
 
     opacity: 0;

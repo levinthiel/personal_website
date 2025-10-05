@@ -3,46 +3,14 @@ import { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 
 export default function Skills({id, t, setLang, lang }) {
-    const [isOpen, setIsOpen] = useState(true);
-    const contentRef = useRef(null);
-    const [maxHeight, setMaxHeight] = useState("0px");
-
-    useEffect(() => {
-        if (contentRef.current) {
-            setMaxHeight(isOpen ? `${contentRef.current.scrollHeight+20}px` : "0px");
-        }
-    }, [isOpen]);
-
-    function toggle() {
-        setIsOpen((s) => !s);
-    }
 
     return (
         <SkillsContainer id={id}>
             <HeaderBar>
                 <h2>{t("skillsH2")}</h2>
-
-                <ToggleButton
-                onClick={toggle}
-                aria-expanded={isOpen}
-                title={isOpen ? "Collapse" : "Expand"}
-                $open={isOpen}
-                >
-                {/* simple chevron svg */}
-                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden>
-                    <path
-                    d="M6 9l6 6 6-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    />
-                </svg>
-                </ToggleButton>
             </HeaderBar>
 
-            <ContentWrapper style={{ maxHeight }} ref={contentRef} $open={isOpen}>
+            <ContentWrapper>
                 <h3>{t("skillsgroup1")}</h3>
                 <ul>
                 <li>HTML/CSS</li>
@@ -126,35 +94,10 @@ const HeaderBar = styled.div`
 `;
 
 
-const ToggleButton = styled.button`
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    transition: transform 200ms ease, background 150ms ease;
-    color: var(--text, #111);             
-
-    &:hover {
-    background: rgba(0, 0, 0, 0.04);
-    }
-
-    svg {
-        transform: rotate(${(p) => (p.$open ? "180deg" : "0deg")});
-        transition: transform 200ms ease;
-    }
-`;
-
 const ContentWrapper = styled.div`
     box-sizing: border-box;
     overflow: hidden;
-    transition: max-height 300ms ease, opacity 200ms ease, padding 300ms ease;
-    opacity: ${(p) => (p.$open ? 1 : 0)};
-    padding: ${(p) => (p.$open ? "0px 40px 24px" : "0 40px")};
+    padding: 0px 40px 24px;
 
     h3:first-child {
         margin-top: 0 !important;

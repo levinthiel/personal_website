@@ -49,7 +49,6 @@ export default function Jobs({id, t, setLang, lang }) {
                     <JobDescription>
                         <li>{t("job4_description1")}</li>
                         <li>{t("job4_description2")}</li>
-                        <li>{t("job4_description3")}</li>
                     </JobDescription>
                 </Job>
                 <Job>
@@ -109,6 +108,16 @@ const Job = styled.div`
 
     &:nth-child(even) {
         background-color: var(--lightblue);
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        padding-left: 24px;
+        font-size: 16px;
+
+        h3 {
+            font-size: 16px;
+        }
     }
 `;
 const JobTitleandInfos = styled.div`

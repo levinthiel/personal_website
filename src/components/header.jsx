@@ -135,6 +135,10 @@ const LanguagesContainer = styled.div`
                 color: var(--blue);
             }
         }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
 `;
 const HeaderInner = styled.div`
     width: 100%;

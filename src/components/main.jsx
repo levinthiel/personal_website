@@ -40,4 +40,8 @@ const StyledMain = styled.main`
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 12px;
+
+  @media (max-width: 576px) {
+    margin-top: 0;
+  }
 `; 

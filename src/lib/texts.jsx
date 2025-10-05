@@ -84,6 +84,12 @@ export const texts = {
         projectsText:"Force Field is a personal project — a small Next.js app where I bring together my writing and cover art. It’s a space where I can combine different skills and experiment with design and development. Rooted was a group project created with friends and colleagues, inspired by our shared love of plants (and clean code). We worked in sprints, reviewed each other’s code, brainstormed, pair-coded, and learned a lot while having fun. I hope you’ll enjoy exploring both of these projects as much as I enjoyed building them.",
 
         trainingH2:"Trainings",
+        training1H3:"Web Developer",
+        training2H3:"UX/UI Designer",
+        training3H3:"JS & PHP basics",
+        training4H3:"Applied arts and graphic design",
+        training5H3:"Bachelor's degree in engineering sciences",
+
     },
     fr: {
         welcome: "Bienvenue",
@@ -167,6 +173,11 @@ export const texts = {
         projectsText:"Force Field est un projet personnel, une petite application Next.js où je rassemble mes écrits et mes couvertures d'histoires. C'est un espace dans lequel je peux combiner différentes compétences et expérimenter le design et le développement. Rooted était un projet collectif créé avec des amis et des collègues, inspiré par notre amour partagé des plantes (et du code). Nous avons travaillé par sprints, revu le code de chacun, réfléchi ensemble, codé en binôme et beaucoup appris tout en nous amusant. J'espère que vous prendrez autant de plaisir à découvrir ces deux projets que j'en ai pris à les créer.",
 
         trainingH2:"Formations",
+        training1H3:"Développeur Web",
+        training2H3:"UX/UI Designer",
+        training3H3:"Cours de base JS & PHP",
+        training4H3:"Arts appliqués et graphisme",
+        training5H3:"Baccalauréat sciences de l'ingénieur",
     },
     de: {
         welcome:"Willkommen",
@@ -250,5 +261,10 @@ export const texts = {
         projectsText:"Force Field ist ein persönliches Projekt – eine kleine Next.js-App, in der ich meine Texte und Cover-Art zusammenführe. Es ist ein Raum, in dem ich verschiedene Fähigkeiten kombinieren und mit Design und Entwicklung experimentieren kann. Rooted war ein Gruppenprojekt, das ich mit Freunden und Kollegen ins Leben gerufen habe, inspiriert von unserer gemeinsamen Liebe zu Pflanzen (und sauberem Code). Wir haben in Sprints gearbeitet, den Code der anderen überprüft, Brainstorming betrieben, gemeinsam programmiert und dabei viel gelernt und Spaß gehabt. Ich hoffe, Ihnen macht die Erkundung dieser beiden Projekte genauso viel Spaß wie mir ihre Entwicklung.",
 
         trainingH2:"Schulungen",
+        training1H3:"Webentwickler",
+        training2H3:"UX/UI Designer",
+        training3H3:"JS & PHP basics",
+        training4H3:"Angewandte Kunst und Grafik Design",
+        training5H3:"Bachelor in Ingenieurwissenschaften",
     }
 };
