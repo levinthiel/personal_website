@@ -43,7 +43,12 @@ p, button, small, li {
 small {
   font-size: 70%;
 }
-header button.active, #jumplinks button.active {
+header button.active {
   background: var(--white);
   border-radius: 50%;
+}
+#jumplinks button.active {
+  background: var(--blue);
+  border-radius: 50%;
+  color: var(--white);
 }
