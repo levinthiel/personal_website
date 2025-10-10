@@ -94,7 +94,7 @@ export const texts = {
         training2H3:"UX/UI Designer",
         training3H3:"JS & PHP basics",
         training4H3:"Applied arts and graphic design",
-        training5H3:"Bachelor's degree in engineering sciences",
+        training5H3:"A-levels in engineering sciences",
 
         linksH2:"You can find me here as well:",
 
