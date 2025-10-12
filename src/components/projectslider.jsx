@@ -4,31 +4,59 @@ import {projects} from '@/lib/projects'
 import { FaArrowCircleRight } from "react-icons/fa";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { useState } from "react";
 
 export default function ProjectSlider() {
+
+    const projectKeys = Object.keys(projects);
+    const [currentId, setCurrentId] = useState(1);
+
+    const handlePrev = () => {
+        const prevId =
+            currentId === Number(projectKeys[0])
+                ? Number(projectKeys[projectKeys.length - 1])
+                : currentId - 1;
+        setCurrentId(prevId);
+    };
+
+    const handleNext = () => {
+        const nextId =
+            currentId === Number(projectKeys[projectKeys.length - 1])
+                ? Number(projectKeys[0])
+                : currentId + 1;
+        setCurrentId(nextId);
+    };
+
+    const currentProject = projects[currentId];
+
+
+
     return (
         <ProjectsContainer>
             <ImageContainer>
-                <ImageName>{projects[1].name}<a href={projects[1].url} target="_blank"><FaArrowCircleRight /></a></ImageName>
+                <ImageName>
+                    {currentProject.name}
+                    <a href={currentProject.url} target="_blank" rel="noopener noreferrer">
+                        <FaArrowCircleRight />
+                    </a>
+                </ImageName>
                 <Image
-                    src={projects[1].image}
+                    src={currentProject.image}
                     width={650}
                     height={648}
-                    alt={projects[1].name + " Website Screenshot"}
-                    title={projects[1].name}
-                /> 
+                    alt={`${currentProject.name} Website Screenshot`}
+                    title={currentProject.name}
+                />
                 <Tags>
-                    <li>Redesign</li>
-                    <li>Redesign</li>
-                    <li>Redesign</li>
-                    <li>Redesign</li>
-                    <li>Redesign</li>
+                    {Object.values(currentProject.tags).map((tag, index) => (
+                        <li key={index}>{tag}</li>
+                    ))}
                 </Tags>
                 <SliderControls>
-                    <button>
+                    <button onClick={handlePrev}>
                         <IoIosArrowDropleftCircle />
                     </button>
-                    <button>
+                    <button onClick={handleNext}>
                         <IoIosArrowDroprightCircle />
                     </button>
                 </SliderControls>
