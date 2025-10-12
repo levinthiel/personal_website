@@ -12,35 +12,34 @@ export default function Projects({id, t, setLang, lang }) {
                     <p>{t("projectsText1")}</p>
                     <p>{t("projectsText2")}</p>
                 </TextContainer>
-{/*                 <ProjectCardWrapper>
-                        <ProjectCard>
-                            
-                        </ProjectCard>
-                </ProjectCardWrapper> */}
             </ProjectTextandCard>
             <ProjectsButtons>
                 <DemoLink href="https://forcefield-gray.vercel.app/" target="_blank" >
-                            <Styledbutton type="button" $color="red">
-                                Force Field Demo
-                            </Styledbutton>
-                        </DemoLink>
-                        <DemoLink href="https://github.com/levinthiel/forcefield" target="_blank" >
-                            <FaGithub />
-                        </DemoLink>
-                        <DemoLink href="https://rooted-capstone.vercel.app/home" target="_blank" >
-                            <Styledbutton type="button" $color="green">
-                                Rooted Demo
-                            </Styledbutton>
-                        </DemoLink>
-                        <DemoLink href="https://github.com/StephMode/plant-pal" target="_blank" >
-                            <FaGithub />
-                        </DemoLink>
+                    <Styledbutton type="button" $color="red">
+                        Force Field Demo
+                    </Styledbutton>
+                </DemoLink>
+                <DemoLink className="small" href="https://github.com/levinthiel/forcefield" target="_blank" >
+                    <FaGithub />
+                </DemoLink>
+                <DemoLink href="https://rooted-capstone.vercel.app/home" target="_blank" >
+                    <Styledbutton type="button" $color="green">
+                        Rooted Demo
+                    </Styledbutton>
+                </DemoLink>
+                <DemoLink className="small" href="https://github.com/StephMode/plant-pal" target="_blank" >
+                    <FaGithub />
+                </DemoLink>
             </ProjectsButtons>
         </ProjectsContainer>
 )}
 const DemoLink = styled.a`
     height: 100%;
-    width: 100%;
+    width: 45%;
+
+    &.small {
+        width: 10%;
+    }
 `;
 const ProjectsContainer= styled.div `
     display: flex;
@@ -64,52 +63,10 @@ const TextContainer = styled.div `
     flex-direction: column;
     gap: 16px;
 `;
-const ProjectCardWrapper = styled.div`
-    gap: 12px;
-    display: flex;
-    flex-direction: column;
-`;
-const ProjectCard = styled.div`
-    background: var(--white);
-    padding: 12px;
-    border-radius: 12px;
-    min-width: 170px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: end;
-    justify-content: space-between;
-    height: 100%;
-
-    &:hover {
-        div {
-            img {
-                transform: scale(1.05);
-            }
-        }
-        svg {
-            transform: translateX(5px);
-        }
-    }
-`;
-const ImageContainer = styled.div`
-    border-radius: 7px;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    background-color: #202020;
-    border: 3px solid var(--blue);
-
-    img {
-        transition: all cubic-bezier(0.68, -0.6, 0.32, 1.6) .3s;
-    }
-`;
 const ProjectsButtons = styled.div`
     display: flex;
-    padding: 12px;
-    background: var(--white);
-    border-radius: 12px;
+    padding: 0;
+    background: none;
     gap: 12px;
     align-items: center;
 
