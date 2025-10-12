@@ -6,6 +6,7 @@ import Quote from "@/components/quote";
 import Languages from "@/components/languages";
 import Hobbies from "@/components/hobbies";
 import Projects from "@/components/projects"
+import ProjectSlider from "@/components/projectslider"
 import Links from "@/components/links"
 import Jumplinks from "@/components/jumplinks"
 import Jobs from "@/components/jobs"
@@ -23,6 +24,7 @@ export default function Main({ t, setLang, lang }) {
         <Languages  id="languages"  t={t} setLang={setLang} lang={lang}/>
         <Jobs       id="jobs"       t={t} setLang={setLang} lang={lang}/>
         <Projects   id="projects"   t={t} setLang={setLang} lang={lang}/>
+        <ProjectSlider              t={t} setLang={setLang} lang={lang}/>
         <Trainings  id="trainings"  t={t} setLang={setLang} lang={lang}/>      
         <Hobbies    id="hobbies"    t={t} setLang={setLang} lang={lang}/>
         <Links                      t={t} setLang={setLang} lang={lang}/>  

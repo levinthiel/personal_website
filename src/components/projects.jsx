@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from 'next/image'
 import { FaGithub } from "react-icons/fa6";
 
 export default function Projects({id, t, setLang, lang }) {
