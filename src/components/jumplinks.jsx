@@ -70,6 +70,7 @@ const JumpLinks = styled.aside`
         left: auto;
         right:0;
         width: 40px;
+        border-radius: 16px 0 0 16px;
         padding: 5px;
 
         ul {
@@ -86,13 +87,14 @@ const JumpLinks = styled.aside`
     @media (max-width: 576px) {
         display: flex;
         top: auto;
-        bottom: 8px;
+        bottom: 0px;
         left: 6px;
         right: 6px;
         width: 97%;
-        height: 40px;
+        height: 50px;
         margin: auto;
         align-items: center;
+        border-radius: 16px 16px 0 0 ;
         gap: 16px;
         justify-content: space-between;
         background-color: rgba(255, 255, 255, .8);
@@ -100,13 +102,18 @@ const JumpLinks = styled.aside`
         ul {
             display: flex;
             padding-top: 0;
-            gap: unset;
+            padding-right: 12px;
+            gap: 12px;
             width: 100%;
             justify-content: space-between;
         }
 
-        a svg {
-            width: 18px !important;
+        a {
+            padding: 0px !important;
+
+            svg {
+                width: 22px !important;
+            }
         }
     }
 
@@ -148,10 +155,8 @@ const LanguagesContainer = styled.div`
     @media (max-width: 576px) {
         flex-direction: row;
         padding: 0;
-        gap: 8px;
+        gap: 5px;
         border: 0;
-        width: 100%;
-        justify-content: space-around;
         border-right: 1px solid lightgray;
         padding-right: 14px;
     }

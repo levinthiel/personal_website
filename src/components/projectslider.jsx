@@ -139,12 +139,27 @@ const Tags=styled.ul`
     padding: 12px;
     display: flex;
     gap: 5px;
-
+    
     li {
         background: var(--blue);
         color: var(--white);
         border-radius: 15px;
         padding: 2px 12px;
+        display: none;
+
+        @media (max-width: 415px) {
+            &:nth-child(-n + 2) {
+                display: block;
+            } 
+        }
+        @media (min-width: 415px) {
+            &:nth-child(-n + 3) {
+                display: block;
+            } 
+        }
+        @media (min-width: 600px) {
+            display: block;
+        }
     }
 `;
 const SliderControls =styled.div`

@@ -33,11 +33,12 @@ export default function Projects({id, t, setLang, lang }) {
         </ProjectsContainer>
 )}
 const DemoLink = styled.a`
-    height: 100%;
+    height: -webkit-fill-available;
     width: 45%;
 
     &.small {
         width: 10%;
+        height: auto;
     }
 `;
 const ProjectsContainer= styled.div `

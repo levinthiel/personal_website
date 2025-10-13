@@ -15,10 +15,10 @@ export const projects = {
         url:"https://rooted-capstone.vercel.app/",
         image:"/projectslider-images/rooted.png",
         tags: {
-            1:"Design",
+            1:"Styled Components",
             2:"Next.js",
-            3:"Styled Components",
-            4:"Github",
+            3:"Github",
+            4:"Design",
         }
     },
     3: {
