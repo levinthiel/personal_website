@@ -44,4 +44,17 @@ export const projects = {
             2:"Reflow",
         }
     },
+    5: {
+        id:5,
+        name:"Force Field",
+        url:"https://forcefield-gray.vercel.app/",
+        image:"/projectslider-images/forcefield.png",
+        tags: {
+            1:"Styled Components",
+            2:"Next.js",
+            3:"Github",
+            4:"Design",
+            5:"Writing",
+        }
+    },
 };
