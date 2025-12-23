@@ -46,8 +46,15 @@ small {
   font-size: 70%;
 }
 header button.active {
-  background: var(--white);
+  background: linear-gradient( 222deg, var(--pink), var(--blue));
+  color: var(--white);
   border-radius: 50%;
+  transition: all ease .3s;
+
+  &:hover {
+    color: var(--white) !important;
+    transform: scale(1.1);
+  }
 }
 #jumplinks button.active {
   background: var(--blue);

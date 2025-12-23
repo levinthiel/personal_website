@@ -44,7 +44,7 @@ const DemoLink = styled.a`
 const ProjectsContainer= styled.div `
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 16px;
     gap: 12px;
     width: auto;
     height: 100%;
