@@ -4,6 +4,15 @@ import { BsStars } from "react-icons/bs";
 import Image from 'next/image'
 
 export default function Header({ t, setLang, lang }) {
+
+    const handleClick = () => {
+        const user = "levinthiel";
+        const domain = "proton";
+        const tld = "me";
+
+        window.location.href = `mailto:${user}@${domain}.${tld}`;
+    };
+
     return (
         <header>
             <TopHeader>
@@ -40,7 +49,7 @@ export default function Header({ t, setLang, lang }) {
                 <Description>
                     {t("introP2")}
                 </Description>
-                <CTAbtn>
+                <CTAbtn onClick={handleClick}>
                     {t("ctaText")} <BsStars />
                 </CTAbtn>
             </HeaderInner>
@@ -53,11 +62,6 @@ const TopHeader = styled.div`
     justify-content: space-between;
 `;
 const WelcomeContainer = styled.div`
-`;
-const Welcome = styled.p`
-    display: flex;
-    gap: 15px;
-    align-items: center;
     --r: .8em;
     border-inline: var(--r) solid #0000;
     border-radius: calc(2 * var(--r)) calc(2 * var(--r)) 0 0 / var(--r);
@@ -66,8 +70,18 @@ const Welcome = styled.p`
     border-top-left-radius: var(--r);
     background: var(--white);
     width: fit-content;
-    padding: 8px 24px 0px 20px;
+    padding: 8px 9px 0px 8px;
+`;
+const Welcome = styled.p`
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: linear-gradient(13deg, var(--blue), var(--pink));
+    border-radius: 20px;
+    color: var(--white);
+    padding: 2px 12px;
     font-family: Inter;
+    font-size: small;
 
         &:hover {
             svg{
@@ -75,7 +89,7 @@ const Welcome = styled.p`
             }
         }
         svg {
-            fill: var(--blue);
+            fill: var(--white);
             transition: all ease .3s
         }
 `;
@@ -130,12 +144,12 @@ const AvailabilityBubble = styled.div`
 const LanguagesContainer = styled.div`
     display: flex;
     gap: 12px;
-    padding: 3px 12px;
+    padding: 4px 12px;
 
         button {
             transition: all ease .3s;
-            padding: 0px 5px;
-            font-size: 13px; 
+            padding: 0px 6px;
+            font-size: 10px; 
 
             &:hover{
                 color: var(--blue);

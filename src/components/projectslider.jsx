@@ -67,7 +67,7 @@ export default function ProjectSlider() {
 const ProjectsContainer= styled.div `
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 16px;
     gap: 12px;
     width: 100%;
     height: auto;

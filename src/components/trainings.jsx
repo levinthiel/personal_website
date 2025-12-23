@@ -33,7 +33,7 @@ const TrainingsContainer = styled.section`
     background-color: var(--white);
     padding: 20px 40px;
     border-radius: 12px;
-    margin-top: 12px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;

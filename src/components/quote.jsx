@@ -35,7 +35,7 @@ export default function Quote({ t, setLang, lang }) {
 }
 
 const QuoteSection = styled.div`
-    margin-top: 12px;
+    margin-top: 16px;
     padding: 20px 40px;
     display: flex;
     align-items: center;

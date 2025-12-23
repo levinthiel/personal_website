@@ -74,7 +74,7 @@ const SkillsContainer = styled.div`
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 16px;
     overflow: visible;
 `;
 

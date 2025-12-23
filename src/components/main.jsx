@@ -41,7 +41,7 @@ const StyledMain = styled.main`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 12px;
+  padding: 16px;
 
   @media (max-width: 576px) {
     margin-top: 0;
