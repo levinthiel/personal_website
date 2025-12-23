@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { IoPlanet } from "react-icons/io5";
+import { BsStars } from "react-icons/bs";
 import Image from 'next/image'
 
 export default function Header({ t, setLang, lang }) {
@@ -17,27 +18,32 @@ export default function Header({ t, setLang, lang }) {
                 </LanguagesContainer>
             </TopHeader>
             <HeaderInner>
-                <ImageContainer>
-                    <Image
-                        src="/portrait.png"
-                        width={150}
-                        height={150}
-                        alt="Picture of the author"
-                        title="Hi, I'm Levin"
-                    />
-                </ImageContainer>
-                <TextContainer>
-                    <h1>
-                        {t("introH1")}
-                    </h1>
-                    <p>
-                        {t("introP")}
-                    </p>
-                </TextContainer>
+                <PortraitAndGreeting>
+                    <ImageContainer>
+                        <Image
+                            src="/portrait.png"
+                            width={150}
+                            height={150}
+                            alt="Picture of the author"
+                            title="Hi, I'm Levin"
+                        />
+                    </ImageContainer>
+                    <TextContainer>
+                        <h1>
+                            {t("introH1")}
+                        </h1>
+                        <p>
+                            {t("introP")}
+                        </p>
+                    </TextContainer>
+                </PortraitAndGreeting>
+                <Description>
+                    {t("introP2")}
+                </Description>
+                <CTAbtn>
+                    {t("ctaText")} <BsStars />
+                </CTAbtn>
             </HeaderInner>
-            <Description>
-                {t("introP2")}
-            </Description>
         </header>
     );
 }
@@ -145,9 +151,12 @@ const HeaderInner = styled.div`
     background: var(--white);
     padding: 72px 40px 40px 40px;
     border-radius: 0px 12px 0 0;
+    border-radius: 0 0 12px 12px;
+`;
+const PortraitAndGreeting = styled.div`
     display: flex;
-    gap: 40px;
     align-items: center;
+    gap: 40px;
 
     @media screen and (max-width: 576px) {
         flex-direction: column;        
@@ -158,16 +167,18 @@ const ImageContainer = styled.div`
     display: flex;
     align-items: center;
     width: fit-content;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient( 222deg, var(--pink), var(--blue));
+    transition:all ease .3s;
+
+    &:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
 
     img {
-        border-radius: 50%;
-        border: solid 3px var(--blue);
-        transition:all ease .3s;
+        border-radius: inherit;
 
-        &:hover {
-            transform: scale(1.5) rotate(10deg);
-            box-shadow: 0px 0px 12px var(--blue) ;
-        }
     }
 `;
 const TextContainer = styled.div`
@@ -180,7 +191,33 @@ const TextContainer = styled.div`
         }
 `;
 const Description = styled.p `
-    background-color: var(--white);
-    padding: 0px 40px 40px 40px;
-    border-radius: 0 0 12px 12px;
+    padding: 40px 0px;
+`;
+const CTAbtn = styled.button`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(222deg, var(--pink), var(--blue), var(--pink));
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    color: var(--white);
+    border-radius: 6px;
+    padding: 8px 32px;
+    cursor: pointer;
+    transition: background-position 0.6s ease, gap 0.3s ease, transform 0.3s ease;
+
+    svg {
+        rotate: 160deg;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        background-position: 100% 50%;
+        gap: 16px;
+        transform: scale(1.1) rotate(-2deg);
+
+        svg {
+        transform: scale(1.3) rotate(350deg);
+        }
+    }
 `;
