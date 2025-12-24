@@ -30,7 +30,7 @@ export default function Trainings({ id, t, setLang, lang }) {
     )
 }
 const TrainingsContainer = styled.section`
-    background-color: var(--white);
+    background-color: var(--white-through);
     padding: 20px 40px;
     border-radius: 12px;
     margin-top: 16px;

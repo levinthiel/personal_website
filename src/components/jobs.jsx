@@ -89,7 +89,7 @@ export default function Jobs({id, t, setLang, lang }) {
     )
 }
 const JobsContainer = styled.section`
-    background-color: var(--white);
+    background-color: var(--white-through);
     border-radius: 12px;
     margin-top: 16px;
     padding: 20px 40px;

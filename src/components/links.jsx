@@ -37,7 +37,7 @@ const LanguaguesSection = styled.div `
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background: var(--white);
+    background: var(--white-through);
     border-radius: 12px;
 `;
 const LinkContainer = styled.div `
@@ -46,7 +46,6 @@ const LinkContainer = styled.div `
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background: var(--white);
     border-radius: 12px;
 
     a{

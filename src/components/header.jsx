@@ -220,7 +220,7 @@ const CTAbtn = styled.button`
     background-size: 200% 200%;
     background-position: 0% 50%;
     color: var(--white);
-    border-radius: 6px;
+    border-radius: 26px;
     padding: 8px 32px;
     cursor: pointer;
     transition: background-position 0.6s ease, gap 0.3s ease, transform 0.3s ease;

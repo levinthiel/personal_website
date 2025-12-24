@@ -71,7 +71,7 @@ const ProjectsContainer= styled.div `
     gap: 12px;
     width: 100%;
     height: auto;
-    background: var(--white);
+    background: var(--white-through);
     padding: 20px;
     border-radius: 12px;
     
