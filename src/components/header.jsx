@@ -68,7 +68,7 @@ const WelcomeContainer = styled.div`
     mask: radial-gradient(var(--r) at var(--r) 0, #0000 98%, #000 101%) calc(-1 * var(--r)) 100% / 100% var(--r) repeat-x, conic-gradient(#000 0 0) padding-box;
     border-left-width: 0;
     border-top-left-radius: var(--r);
-    background: var(--white);
+    background: var(--white-through);
     width: fit-content;
     padding: 8px 9px 0px 8px;
 `;
@@ -150,9 +150,11 @@ const LanguagesContainer = styled.div`
             transition: all ease .3s;
             padding: 0px 6px;
             font-size: 10px; 
+            border-radius: 50%;
 
             &:hover{
                 color: var(--blue);
+                background: var(--white);
             }
         }
 
@@ -162,10 +164,13 @@ const LanguagesContainer = styled.div`
 `;
 const HeaderInner = styled.div`
     width: 100%;
-    background: var(--white);
+    background: var(--white-through);
     padding: 72px 40px 40px 40px;
-    border-radius: 0px 12px 0 0;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 12px 12px 12px;
+
+    @media screen and (max-width: 576px) {
+        border-radius: 0px 12px 12px 12px;       
+    }
 `;
 const PortraitAndGreeting = styled.div`
     display: flex;

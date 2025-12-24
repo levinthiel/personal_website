@@ -1,22 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --white:    #FBFFFF;
-  --black:    #0D0D0D;
-  --grey:     #E2E2E2;
-  --darkgrey: #3f3f3f;
-  --blue:     #008CFF;
-  --pink:     #f87bff;
-  --darkblue: #0362af;
-  --lightblue:#f2f9ff;
-  --green:    #2ABE3E;
+  --white:         #FBFFFF;
+  --white-through: rgba(251, 255, 255, .9);
+--black:           #0D0D0D;
+--grey:            #E2E2E2;
+--darkgrey:        #3f3f3f;
+--blue:            #008CFF;
+--pink:            #f87bff;
+--darkblue:        #0362af;
+--lightblue:       #f2f9ff;
+--green:           #2ABE3E;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   background: linear-gradient(180deg, rgb(246, 246, 246)  0%, rgb(232, 232, 232) 100%) fixed;
-  background-image: url(../../public/concrete_wall.png) ;
+  background-image: url(../../public/grid.webp) ;
   color: var(--black);
   font-family: montserrat;
   width: 100%;
@@ -53,6 +54,7 @@ header button.active {
 
   &:hover {
     color: var(--white) !important;
+    background: linear-gradient( 222deg, var(--pink), var(--blue)) !important;
     transform: scale(1.1);
   }
 }
