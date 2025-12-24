@@ -34,12 +34,14 @@ export default function Main({ t, setLang, lang }) {
 }
 
 const StyledMain = styled.main`
+  position: relative;
+  z-index: 10;
   margin: 40px auto;
   max-width: 750px; 
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 16px;
 

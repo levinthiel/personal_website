@@ -54,7 +54,7 @@ const ProjectTextandCard = styled.div`
     gap: 1rem;
 `;
 const TextContainer = styled.div `
-    background: var(--white);
+    background: var(--white-through);
     padding: 20px 40px;
     border-radius: 12px;
     height: 100%;

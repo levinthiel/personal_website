@@ -59,7 +59,7 @@ const LanguaguesSection = styled.div `
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background: var(--white);
+    background: var(--white-through);
     border-radius: 12px;
 `;
 const FlagContainer = styled.div `
@@ -68,7 +68,6 @@ const FlagContainer = styled.div `
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background: var(--white);
     border-radius: 12px;
 `;
 const Language = styled.div `

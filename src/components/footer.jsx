@@ -1,8 +1,14 @@
-// Footer.jsx
+import styled from "styled-components";
+
 export default function Footer() {
   return (
-    <footer>
-      <p>© 2025 Levin</p>
-    </footer>
+    <StyledFooter>
+      <p>© 2026 Levin</p>
+    </StyledFooter>
   );
 }
+
+const StyledFooter = styled.footer`
+  position: relative;
+  z-index: 11;
+`;

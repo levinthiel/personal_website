@@ -69,7 +69,7 @@ export default function Skills({id, t, setLang, lang }) {
 
 const SkillsContainer = styled.div`
     width: 100%;
-    background: var(--white);
+    background: var(--white-through);
     padding: 0;
     border-radius: 12px;
     display: flex;
@@ -84,7 +84,6 @@ const HeaderBar = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background: var(--white);
     border-radius: 12px;
     box-sizing: border-box;
 

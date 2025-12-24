@@ -18,6 +18,6 @@ const HobbiesSection = styled.div `
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background: var(--white);
+    background: var(--white-through);
     border-radius: 12px;
 `;
