@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 export default function Background() {
+
+  //defines the movement area for blobs
   const getBounds = () => ({
     minX: -200,
     minY: -200,
@@ -11,14 +13,16 @@ export default function Background() {
     maxY: window.innerHeight + 200,
   });
 
-  const random = (min, max) => Math.random() * (max - min) + min;
-
-  const circles = useRef([]);
-
   const bounds = useRef(
     typeof window !== "undefined" ? getBounds() : null
   );
 
+  //randomize initial positions of the blobs
+  const random = (min, max) => Math.random() * (max - min) + min;
+
+  const circles = useRef([]);
+
+  //radius an speed of the blobs
   if (circles.current.length === 0 && typeof window !== "undefined") {
     const { maxX, maxY } = getBounds();
 
@@ -36,60 +40,64 @@ export default function Background() {
   }
 
   const circleRefs = useRef([]);
+
+  // Mouse tracking
   const mouse = useRef({ x: 0, y: 0, active: false });
+
   useEffect(() => {
+
+    //redefine bounds on window resize
     const onResize = () => {
       bounds.current = getBounds();
     };
-
     window.addEventListener("resize", onResize);
 
     const animate = () => {
-  circles.current.forEach((circle, i) => {
-    // base movement
-    circle.x += circle.xSpeed;
-    circle.y += circle.ySpeed;
+      circles.current.forEach((circle, i) => {
+        // base movement
+        circle.x += circle.xSpeed;
+        circle.y += circle.ySpeed;
 
-    // mouse attraction
-    if (mouse.current.active) {
-      const dx = mouse.current.x - circle.x;
-      const dy = mouse.current.y - circle.y;
-      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        // Mouse attraction
+        if (mouse.current.active) {
+          const dx = mouse.current.x - circle.x;
+          const dy = mouse.current.y - circle.y;
+          const dist = Math.sqrt(dx * dx + dy * dy) || 1;
 
-      const influenceRadius = 300;
-      if (dist < influenceRadius) {
-        const strength = (1 - dist / influenceRadius) * 0.9;
+          const influenceRadius = 300;
+          if (dist < influenceRadius) {
+            const strength = (1 - dist / influenceRadius) * 0.9;
 
-        circle.x += (dx / dist) * strength;
-        circle.y += (dy / dist) * strength;
-      }
-    }
+            circle.x += (dx / dist) * strength;
+            circle.y += (dy / dist) * strength;
+          }
+        }
 
-    // bounds
-    if (
-      circle.x < bounds.current.minX - circle.r ||
-      circle.x > bounds.current.maxX + circle.r
-    ) {
-      circle.xSpeed *= -1;
-    }
+        // Boundaries bounce
+        if (
+          circle.x < bounds.current.minX - circle.r ||
+          circle.x > bounds.current.maxX + circle.r
+        ) {
+          circle.xSpeed *= -1;
+        }
 
-    if (
-      circle.y < bounds.current.minY - circle.r ||
-      circle.y > bounds.current.maxY + circle.r
-    ) {
-      circle.ySpeed *= -1;
-    }
+        if (
+          circle.y < bounds.current.minY - circle.r ||
+          circle.y > bounds.current.maxY + circle.r
+        ) {
+          circle.ySpeed *= -1;
+        }
 
-    // apply to SVG
-    const el = circleRefs.current[i];
-    if (el) {
-      el.setAttribute("cx", circle.x);
-      el.setAttribute("cy", circle.y);
-    }
-  });
+        // apply to SVG
+        const el = circleRefs.current[i];
+        if (el) {
+          el.setAttribute("cx", circle.x);
+          el.setAttribute("cy", circle.y);
+        }
+      });
 
-  requestAnimationFrame(animate);
-};
+      requestAnimationFrame(animate);
+    };
 
 
     requestAnimationFrame(animate);
@@ -98,31 +106,31 @@ export default function Background() {
   }, []); 
 
   
+  //Mouse tracking only on desktop
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 769px)");
 
-useEffect(() => {
-  const mq = window.matchMedia("(min-width: 769px)");
+    const updateMouse = (e) => {
+      mouse.current.x = e.clientX;
+      mouse.current.y = e.clientY;
+      mouse.current.active = true;
+    };
 
-  const updateMouse = (e) => {
-    mouse.current.x = e.clientX;
-    mouse.current.y = e.clientY;
-    mouse.current.active = true;
-  };
+    if (mq.matches) {
+      window.addEventListener("mousemove", updateMouse);
+    }
 
-  if (mq.matches) {
-    window.addEventListener("mousemove", updateMouse);
-  }
+    const onChange = () => {
+      mouse.current.active = mq.matches;
+    };
 
-  const onChange = () => {
-    mouse.current.active = mq.matches;
-  };
+    mq.addEventListener("change", onChange);
 
-  mq.addEventListener("change", onChange);
-
-  return () => {
-    window.removeEventListener("mousemove", updateMouse);
-    mq.removeEventListener("change", onChange);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("mousemove", updateMouse);
+      mq.removeEventListener("change", onChange);
+    };
+  }, []);
 
   return (
     <BackgroundContainer>

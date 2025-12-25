@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Footer() {
   return (
     <StyledFooter>
-      <p>© 2026 Levin</p>
+      <p>© 2026 Levin Thiel</p>
     </StyledFooter>
   );
 }

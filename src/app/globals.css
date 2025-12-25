@@ -30,15 +30,31 @@ h1 {
 }
 h2 {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
 }
 h3 {
   font-size: 18px;
-  font-weight: 600;
-  color: var(--blue);
+  font-weight: 500;
+  color: var(--white);
   line-height: 1;
+  background: linear-gradient(45deg, var(--blue), var(--pink));
+  border-radius: 26px;
+  padding: 5px 16px;
+  display: flex;
+  width: fit-content;
+  gap: 10px;
 }
+#jobs h3 {
+        color: var(--blue);
+        font-weight: 600;
+        border-radius: 0;
+        background: linear-gradient(45deg, var(--blue), var(--pink));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0;
+    }
 p, button, small, li {
   font-family: Inter;
   color: var(--darkgrey);
@@ -59,7 +75,7 @@ header button.active {
   }
 }
 #jumplinks button.active {
-  background: var(--blue);
+  background: linear-gradient( 222deg, var(--pink), var(--blue)) ;
   border-radius: 50%;
   color: var(--white);
 }

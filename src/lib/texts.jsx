@@ -19,6 +19,7 @@ export const texts = {
         skillsgroup2item4:"persona creation",
         skillsgroup2item5:"UX Research",
         skillsgroup2item6:"Accessibility",
+        skillsgroup2item7:"AI visual content",
 
         skillsgroup3:"Project Management",
         skillsgroup3item1:"collaboration tools",
@@ -117,6 +118,7 @@ export const texts = {
         skillsgroup2item4:"création persona",
         skillsgroup2item5:"Recherche UX",
         skillsgroup2item6:"Accessibilité",
+        skillsgroup2item7:"Création d'images avec l'IA",
 
         skillsgroup3:"Méthodologies & Gestion de projets",
         skillsgroup3item1:"Outils de collaboration",
@@ -214,6 +216,7 @@ export const texts = {
         skillsgroup2item4:"Persona Erstellung",
         skillsgroup2item5:"UX Research",
         skillsgroup2item6:"Barrierefreiheit",
+        skillsgroup2item7:"KI Bildgenerierung",
 
         skillsgroup3:"Projektmanagement",
         skillsgroup3item1:"Kollaborationstools",

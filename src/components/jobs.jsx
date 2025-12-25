@@ -125,6 +125,7 @@ const Job = styled.div`
 const JobTitleandInfos = styled.div`
     min-width: 300px;
 
+
     @media (max-width: 576px) {
         min-width: 246px;
     }
