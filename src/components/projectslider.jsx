@@ -141,7 +141,7 @@ const Tags=styled.ul`
     gap: 5px;
     
     li {
-        background: var(--blue);
+        background: linear-gradient(45deg, var(--blue), var(--pink));
         color: var(--white);
         border-radius: 15px;
         padding: 2px 12px;

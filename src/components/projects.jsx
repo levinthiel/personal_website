@@ -95,7 +95,7 @@ const Styledbutton = styled.button `
         : "#008CFF"};
     color: var(--white);
     padding: 5px 16px;
-    border-radius: 7px;
+    border-radius: 20px;
     text-align: center;
     transition: all ease .3s;  
     justify-content: center;

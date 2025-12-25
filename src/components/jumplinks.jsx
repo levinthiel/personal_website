@@ -124,10 +124,8 @@ const JumpLinks = styled.aside`
         align-items: center;
         transition: all ease .3s;
         gap: 7px;
-
-        &:hover {
-            transform: scale(1.05);
-        }
+        background: var(--white);
+        margin-bottom: 5px;
 
         svg {
             fill: var(--blue);
@@ -136,7 +134,16 @@ const JumpLinks = styled.aside`
         }
 
         &:hover {
-            background: var(--white);
+            background: linear-gradient(45deg,var(--blue),var(--pink));
+            transform: scale(1.05);
+
+            p {
+                color: var(--white);
+            }
+
+            svg {
+                fill: var(--white);
+            }
         }
     }
 `;
@@ -165,6 +172,8 @@ const LanguagesContainer = styled.div`
             transition: all ease .3s;
             padding: 4px 6px;
             font-size: 13px; 
+            background: var(--white);
+            border-radius: 50%;
 
             &:hover{
                 color: var(--blue);

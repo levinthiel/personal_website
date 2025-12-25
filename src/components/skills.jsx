@@ -1,6 +1,8 @@
-// components/Skills.js
-import { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
+import { FaCode } from "react-icons/fa6";
+import { TbDeviceMobileHeart } from "react-icons/tb";
+import { PiProjectorScreenChart } from "react-icons/pi";
+import { LuPaintbrush } from "react-icons/lu";
 
 export default function Skills({id, t, setLang, lang }) {
 
@@ -11,11 +13,13 @@ export default function Skills({id, t, setLang, lang }) {
             </HeaderBar>
 
             <ContentWrapper>
-                <h3>{t("skillsgroup1")}</h3>
+                <h3><FaCode /> {t("skillsgroup1")}</h3>
                 <ul>
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>Cursor</li>
+                <li>Chat GPT / Claude</li>
                 <li>Vite</li>
                 <li>Next.js</li>
                 <li>WordPress</li>
@@ -27,13 +31,15 @@ export default function Skills({id, t, setLang, lang }) {
                 <li>SCSS</li>
                 <li>Vercel</li>
                 <li>Docker</li>
+                <li>VS Code</li>
                 <li>MongoDB</li>
                 </ul>
 
-                <h3>{t("skillsgroup2")}</h3>
+                <h3><TbDeviceMobileHeart /> {t("skillsgroup2")}</h3>
                 <ul>
                 <li>Adobe Creative Suite</li>
                 <li>Figma</li>
+                <li>{t("skillsgroup2item7")}</li>
                 <li>{t("skillsgroup2item1")}</li>
                 <li>{t("skillsgroup2item2")}</li>
                 <li>{t("skillsgroup2item3")}</li>
@@ -42,7 +48,7 @@ export default function Skills({id, t, setLang, lang }) {
                 <li>{t("skillsgroup2item6")}</li>
                 </ul>
 
-                <h3>{t("skillsgroup3")}</h3>
+                <h3><PiProjectorScreenChart /> {t("skillsgroup3")}</h3>
                 <ul>
                 <li>Agile</li>
                 <li>Scrum</li>
@@ -54,7 +60,7 @@ export default function Skills({id, t, setLang, lang }) {
                 <li>{t("skillsgroup2item6")}</li>
                 </ul>
 
-                <h3>{t("skillsgroup4")}</h3>
+                <h3><LuPaintbrush /> {t("skillsgroup4")}</h3>
                 <ul>
                 <li>{t("skillsgroup4item1")}</li>
                 <li>{t("skillsgroup4item2")}</li>
