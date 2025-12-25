@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Levin Thiel",
     description:
-      "Hi, I’m Levin 👋 I design and code for the web — blending creativity with clean, functional code.",
+    "Hi, I’m Levin 👋 I design and code modern web experiences using React and Next.js, blending creativity with clean, accessible, and performant code.",
     url: "https://levinthiel.vercel.app",
     siteName: "Levin Thiel",
     images: [
@@ -48,8 +48,9 @@ export const metadata: Metadata = {
         alt: "Levin Thiel – UX / UI & code",
       },
     ],
-    locale: "en_US",
-    type: "website",
+    locale: "en_UK",
+    type: "article",
+    publishedTime: "2025-10-01T00:00:00.000Z",
   },
 };
 
