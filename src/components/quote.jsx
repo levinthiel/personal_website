@@ -13,23 +13,23 @@ export default function Quote({ t, setLang, lang }) {
 
     return (
         <QuoteSection aria-live="polite">
-        <RiDoubleQuotesL className="left-quote" />
-        <QuoteInner>
-            {quotes.map((q, i) => {
-            // Each quote's animation runs for totalCycle seconds and is delayed
-            // so that quotes appear one after another.
-            const style = {
-                animationDelay: `${(cycleDuration * i)}s`,
-                animationDuration: `${totalCycle}s`
-            };
-            return (
-                <QuoteItem key={i} style={style} role="text">
-                <h2>{q}</h2>
-                </QuoteItem>
-            );
-            })}
-        </QuoteInner>
-        <RiDoubleQuotesR className="right-quote" />
+            <RiDoubleQuotesL className="left-quote" />
+            <QuoteInner>
+                {quotes.map((q, i) => {
+                // Each quote's animation runs for totalCycle seconds and is delayed
+                // so that quotes appear one after another.
+                const style = {
+                    animationDelay: `${(cycleDuration * i)}s`,
+                    animationDuration: `${totalCycle}s`
+                };
+                return (
+                    <QuoteItem key={i} style={style} role="text">
+                    <h2>{q}</h2>
+                    </QuoteItem>
+                );
+                })}
+            </QuoteInner>
+            <RiDoubleQuotesR className="right-quote" />
         </QuoteSection>
     );
 }
@@ -48,10 +48,13 @@ const QuoteSection = styled.div`
 
     svg {
         flex: 0 0 auto;
-        font-size: 1.6rem;
-        color: var(--blue);
+        font-size: 2.3rem;
+        background: linear-gradient(222deg, var(--blue), var(--pink));
+        border-radius: 50%;
+        fill: var(--white);
+        padding: 4px;
     }
-    `;
+`;
 
 const QuoteInner = styled.div`
     flex: 1 1 auto;
