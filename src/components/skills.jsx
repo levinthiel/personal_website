@@ -13,7 +13,7 @@ export default function Skills({id, t, setLang, lang }) {
             </HeaderBar>
 
             <ContentWrapper>
-                <h3><FaCode /> {t("skillsgroup1")}</h3>
+                <h3><FaCode className="svgfill" /> {t("skillsgroup1")}</h3>
                 <ul>
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
@@ -35,7 +35,7 @@ export default function Skills({id, t, setLang, lang }) {
                 <li>MongoDB</li>
                 </ul>
 
-                <h3><TbDeviceMobileHeart /> {t("skillsgroup2")}</h3>
+                <h3><TbDeviceMobileHeart className="svgstroke"  /> {t("skillsgroup2")}</h3>
                 <ul>
                 <li>Adobe Creative Suite</li>
                 <li>Figma</li>
@@ -48,7 +48,7 @@ export default function Skills({id, t, setLang, lang }) {
                 <li>{t("skillsgroup2item6")}</li>
                 </ul>
 
-                <h3><PiProjectorScreenChart /> {t("skillsgroup3")}</h3>
+                <h3><PiProjectorScreenChart className="svgfill" /> {t("skillsgroup3")}</h3>
                 <ul>
                 <li>Agile</li>
                 <li>Scrum</li>
@@ -60,7 +60,7 @@ export default function Skills({id, t, setLang, lang }) {
                 <li>{t("skillsgroup2item6")}</li>
                 </ul>
 
-                <h3><LuPaintbrush /> {t("skillsgroup4")}</h3>
+                <h3><LuPaintbrush  className="svgstroke" /> {t("skillsgroup4")}</h3>
                 <ul>
                 <li>{t("skillsgroup4item1")}</li>
                 <li>{t("skillsgroup4item2")}</li>
