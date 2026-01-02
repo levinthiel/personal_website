@@ -48,10 +48,26 @@ export default function Header({ t, setLang, lang }) {
                 </PortraitAndGreeting>
                 <Description>
                     {t("introP2")}
+                    <br/><br/>
+                    <i>{t("introP3")}</i>
+                    <br/><br/>
+                    <CTASection>
+                        <p>{t("ctaText")}</p>
+                        <CTAbtn onClick={handleClick}>
+                            {t("ctaLabel")} <BsStars />
+                        </CTAbtn>
+                    </CTASection>
+                    <Tldr>
+                        <h2>TL;DR</h2>
+                        <ul>
+                            <li>{t("introList1")}</li>
+                            <li>{t("introList2")}</li>
+                            <li>{t("introList3")}</li>
+                            <li>{t("introList4")}</li>
+                            <li>{t("introList5")}</li>
+                        </ul>
+                    </Tldr>
                 </Description>
-                <CTAbtn onClick={handleClick}>
-                    {t("ctaText")} <BsStars />
-                </CTAbtn>
             </HeaderInner>
         </header>
     );
@@ -210,7 +226,34 @@ const TextContainer = styled.div`
         }
 `;
 const Description = styled.p `
-    padding: 40px 0px;
+    padding: 40px 0 0  0;
+`;
+const Tldr = styled.div`
+    margin-top: 40px;
+    /* padding: 25px;
+    border-radius: 12px;
+    background: var(--white);
+    border: 2px solid rgba(0,140,255,0.2); */
+
+    h2 {
+        color: var(--black);
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style:disc;
+        padding-left: 20px;
+
+        li::marker {
+        color: var(--blue);
+        }
+    }
+`;
+const CTASection = styled.div`
+    p {
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
 `;
 const CTAbtn = styled.button`
     display: flex;
