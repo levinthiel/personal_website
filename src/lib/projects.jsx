@@ -3,9 +3,9 @@ export const projects = {
         id:1,
         name:"Faktor E GmbH",
         url:"https://www.faktor-e.de/",
-        image:"/projectslider-images/faktore.png",
+        image:"/projectslider-images/faktore-new.png",
         tags: {
-            1:"Redesign",
+            1:"Corporate Redesign",
             2:"UX/UI",
         }
     },
@@ -27,7 +27,7 @@ export const projects = {
         url:"https://www.network-publishing.de/",
         image:"/projectslider-images/network.png",
         tags: {
-            1:"Redesign",
+            1:"Website Redesign",
             2:"Typo3",
             3:"SCSS",
             4:"Bootstrap",
