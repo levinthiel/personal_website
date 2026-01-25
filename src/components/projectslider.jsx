@@ -89,6 +89,7 @@ const ImageContainer= styled.div `
     background-color: var(--grey);
 
     img {
+        border-radius: 12px;
         transition: all ease .3s;
         &:hover {
             transform: scale(1.2);
