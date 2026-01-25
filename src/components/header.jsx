@@ -38,14 +38,15 @@ export default function Header({ t, setLang, lang }) {
                         />
                     </ImageContainer>
                     <TextContainer>
-                        <h1>
+                        <h2>
                             {t("introH1")}
-                        </h1>
+                        </h2>
                         <p>
                             {t("introP")}
                         </p>
                     </TextContainer>
                 </PortraitAndGreeting>
+                <h1>I make Design that’s intuitive to use — and realistic to build.</h1>
                 <Description>
                     {t("introP2")}
                     <br/><br/>
@@ -222,7 +223,7 @@ const TextContainer = styled.div`
     height: 100%;
 
         p {
-            color: var(--blue);
+            font-style: italic;
         }
 `;
 const Description = styled.p `
@@ -230,10 +231,6 @@ const Description = styled.p `
 `;
 const Tldr = styled.div`
     margin-top: 40px;
-    /* padding: 25px;
-    border-radius: 12px;
-    background: var(--white);
-    border: 2px solid rgba(0,140,255,0.2); */
 
     h2 {
         color: var(--black);
@@ -252,7 +249,7 @@ const Tldr = styled.div`
 const CTASection = styled.div`
     p {
         margin-bottom: 8px;
-        font-weight: 500;
+        font-weight: 600;
     }
 `;
 const CTAbtn = styled.button`
