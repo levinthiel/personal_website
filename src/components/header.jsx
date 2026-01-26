@@ -39,14 +39,14 @@ export default function Header({ t, setLang, lang }) {
                     </ImageContainer>
                     <TextContainer>
                         <h2>
-                            {t("introH1")}
+                            {t("introH2")}
                         </h2>
                         <p>
                             {t("introP")}
                         </p>
                     </TextContainer>
                 </PortraitAndGreeting>
-                <h1>I make Design that’s intuitive to use — and realistic to build.</h1>
+                <h1> {t("introH1")}</h1>
                 <Description>
                     {t("introP2")}
                     <br/><br/>
