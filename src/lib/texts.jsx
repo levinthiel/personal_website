@@ -4,7 +4,8 @@ export const texts = {
     en: {
         welcome: "Welcome",
         availability: "Available",
-        introH1: "Hi, I'm Levin",
+        introH1:"I make Design that’s intuitive to use — and realistic to build.",
+        introH2: "Hi, I'm Levin",
         introP: "UX/UI Designer and Frontend Developer with 13+ years of experience.",
         
         introP2: "I’m designing and building intuitive, accessible digital products from concept to production. I work at the intersection of user needs, visual design, and technical feasibility — shaping ideas through research and prototyping, then supporting clean, realistic implementation with developers (or building it myself).",
@@ -111,7 +112,8 @@ export const texts = {
     fr: {
         welcome: "Bienvenue",
         availability: "Disponible",
-        introH1: "Salut, je m'appelle Levin",
+        introH1:"Je crée des designs intuitifs à utiliser et réalistes à construire.",
+        introH2: "Salut, je m'appelle Levin",
         introP: "Designer UX/UI et développeur front-end avec plus de 13 ans d'expérience.",
         introP2: "Je conçois et développe des produits digitaux intuitifs et accessibles, de la conception à la production. Je travaille à la croisée des besoins des utilisateurs, du design visuel et de la faisabilité technique. Je donne forme aux idées grâce à la recherche et au développement de prototypes, avant de soutenir une mise en œuvre claire et réaliste avec les développeurs (ou de la réaliser moi-même).",
         introP3:"En bref : je manipule des pixels, je pose les bonnes questions et j'aide mon équipe à créer des interfaces agréables à utiliser et faciles à maintenir.",
@@ -215,7 +217,8 @@ export const texts = {
     de: {
         welcome:"Willkommen",
         availability: "Verfügbar",
-        introH1: "Hi, ich bin Levin",
+        introH1:"Ich erstelle Designs, die intuitiv zu bedienen und realistisch umsetzbar sind.",
+        introH2: "Hi, ich bin Levin",
         introP: "UX/UI-Designer und Frontend-Entwickler mit über 13 Jahren Erfahrung.",        
         introP2: "Ich entwerfe und entwickle intuitive, barrierefreie digitale Produkte vom Konzept bis zur Produktion. Ich arbeite an der Schnittstelle zwischen Nutzerbedürfnissen, visuellem Design und technischer Machbarkeit – ich forme Ideen durch Recherche und Prototyping und unterstütze dann eine saubere, realistische Umsetzung mit Entwicklern (oder entwickle sie selbst).",
         introP3:"Kurz gesagt: Ich schiebe Pixel, stelle die richtigen Fragen und helfe mein Team dabei, Erlebnisse zu schaffen, die sich gut anfühlen und gut zu pflegen sind.",
